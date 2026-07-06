@@ -1,0 +1,2853 @@
+{
+  "authors": [
+    {
+      "id": "franz-kafka",
+      "nameCn": "弗兰茨·卡夫卡",
+      "nameEn": "Franz Kafka",
+      "ip": "奥地利",
+      "lifespan": "1883.7.3 ~ 1924.6.3（40岁）巨蟹座",
+      "profession": "小说家、保险公司职员",
+      "bio": "荒诞文学鼻祖，一生疲惫内向",
+      "tags": [
+        "荒诞",
+        "孤独",
+        "内耗",
+        "打工人文学"
+      ],
+      "quotes": [
+        {
+          "id": "f766613a-34b3-4821-b909-0a6ec16ca7e3",
+          "text": "我最大的能耐，就是躺着不动。",
+          "original": "am besten kann ich liegen bleiben",
+          "originalLabel": "德语",
+          "source": "《致菲莉斯·鲍尔书信》"
+        },
+        {
+          "id": "9342ae42-d15f-45ef-b7fa-dd025f513f1a",
+          "text": "我最擅长的事，就是一蹶不振。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《致菲莉斯·鲍尔书信》"
+        },
+        {
+          "id": "24af3e37-fe7e-4ec0-b231-c82c86c730c2",
+          "text": "任何苦难，都能把我打倒。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《日常随笔残稿》"
+        },
+        {
+          "id": "b9ef7724-d814-40d0-b8e2-1808eb4a420e",
+          "text": "只是散步而已，便让我疲惫到，整整三天几乎做不了任何事。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《给菲莉斯的情书》"
+        },
+        {
+          "id": "36d078a1-7309-4776-adfb-fae4e10da7b7",
+          "text": "早上八点开始工作，到晚上七点、七点半、八点、八点半……天啊！我站在通往办公室的狭长走廊上，每天早上被绝望侵袭。",
+          "original": "Um acht Uhr morgens die Arbeit beginnen, bis abends sieben, halb acht, acht, halb neun… Gott! Jeden Morgen überfällt mich Verzweiflung auf dem langen Korridor zum Büro.",
+          "originalLabel": "德语",
+          "source": "1911年日记"
+        },
+        {
+          "id": "858d369e-91f7-4912-b0fd-89352572209e",
+          "text": "工作结束了，就像一个未经治疗的伤口自动愈合了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "1912年工作日记"
+        },
+        {
+          "id": "5e55c365-df53-476d-9575-a203ddb7c933",
+          "text": "无论我今天多么想从床上爬起来，我还是直接晕倒了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "肺病休养日记"
+        },
+        {
+          "id": "19446b21-f04c-4424-8c66-3ca19c092c2c",
+          "text": "起床这么早，会使人变傻的，人是需要睡觉的。",
+          "original": "",
+          "originalLabel": "",
+          "source": "致友人书信"
+        },
+        {
+          "id": "095ed887-3f21-4133-bb3c-75994b10c31a",
+          "text": "我没有任何面对人生必备的能力，只有人性的软弱。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人随笔"
+        },
+        {
+          "id": "f0bd2fa6-d128-42eb-933b-0d3545fe7f32",
+          "text": "我忍受了五年办公室生活，日复一日重复枯燥，耗尽全部心力。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场日记"
+        },
+        {
+          "id": "d2827dfb-bc99-4bb2-8bee-d955424cfe41",
+          "text": "活着这件事，就是循着绵延不断的岔路前行，永远找不到正确那条。",
+          "original": "",
+          "originalLabel": "",
+          "source": "箴言手稿"
+        },
+        {
+          "id": "cf8966ab-b2c3-4f68-b5cb-c5a32becec41",
+          "text": "我试着整理自己一直以来和朋友的关系，发现这根本是一段枉然的助跑。",
+          "original": "",
+          "originalLabel": "",
+          "source": "人际交往随笔"
+        },
+        {
+          "id": "fa43c8ff-8558-4de3-b713-ba5d1d5be9e5",
+          "text": "神经质的雨，总是落在我的头上。我现在想做什么事，但过了一会儿，又不想做了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "雨天随笔"
+        },
+        {
+          "id": "10ddfec6-b99c-46c8-a606-1c6abff90f51",
+          "text": "我连将盛着牛奶的杯子举至嘴边，都觉得恐怖，浑身提不起力气。",
+          "original": "",
+          "originalLabel": "",
+          "source": "身体状态手记"
+        },
+        {
+          "id": "0540430c-1de2-429f-a609-17e217663a8b",
+          "text": "巴尔扎克的手杖上刻着：“我击溃一切困难”。我的手杖上刻着：“一切困难将我击溃”。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《书信集》"
+        },
+        {
+          "id": "165b774d-fb8d-4757-83de-edf2ca91c9a3",
+          "text": "我是自由的，那就是我迷失的原因。",
+          "original": "Ich bin frei, das ist der Grund meiner Verlorenheit.",
+          "originalLabel": "德语",
+          "source": "《箴言录》"
+        },
+        {
+          "id": "04ab42fe-b01e-482f-a72a-ff95bb403bcb",
+          "text": "生命之所以有意义是因为它会停止，否则只会无尽煎熬。",
+          "original": "",
+          "originalLabel": "",
+          "source": "雅诺施《与卡夫卡谈话录》"
+        },
+        {
+          "id": "d622a0d7-788d-448f-844d-dbc8d9df6389",
+          "text": "尽管人群拥挤，每个人都是沉默的，孤独的，永远无法相通。",
+          "original": "",
+          "originalLabel": "",
+          "source": "城市随笔"
+        },
+        {
+          "id": "a54ba7c2-817a-4d1a-a3bb-2ad145df39f7",
+          "text": "目的虽有，却无路可循；我们称之为路的，无非是踌躇。",
+          "original": "Es gibt ein Ziel, aber keinen Weg; was wir Weg nennen, ist Zögern.",
+          "originalLabel": "德语",
+          "source": "《蓝八开本箴言录》"
+        },
+        {
+          "id": "ce2f77c3-fbef-42b0-8799-8eff7d027c96",
+          "text": "战争中你流尽鲜血，和平中你寸步难行，怎么都无法解脱。",
+          "original": "",
+          "originalLabel": "",
+          "source": "一战时期日记"
+        },
+        {
+          "id": "f98708f6-84b1-43a3-8cca-fd8ae2b4fa45",
+          "text": "害怕失去饭碗，这种恐惧心理败坏了人的全部性格。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场随笔"
+        },
+        {
+          "id": "08fabd67-e8dc-47a7-b64e-db17b8b4dd07",
+          "text": "他们把活生生的、富于变化的人变成了死的、毫无变化能力的档案号。",
+          "original": "",
+          "originalLabel": "",
+          "source": "批判官僚短文"
+        },
+        {
+          "id": "502ccd86-328b-4c12-be75-c71e54ddec8f",
+          "text": "人们憎恨旧的牢房，请求转入一个新的牢房，终生困于牢笼。",
+          "original": "",
+          "originalLabel": "",
+          "source": "箴言手稿"
+        },
+        {
+          "id": "adf920b8-5430-46ff-9660-492758beab74",
+          "text": "人无法通观自己，他处在黑暗中，永远看不清自身全貌。",
+          "original": "",
+          "originalLabel": "",
+          "source": "哲学随笔"
+        },
+        {
+          "id": "e56469ab-8208-462b-975c-7ad7d38ac176",
+          "text": "你可以逃避这世上的痛苦，这是你的自由。但或许，你唯一能逃避的，只是这逃避本身。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《蓝八开本箴言录》"
+        },
+        {
+          "id": "2aedb87f-eed7-4ee8-a204-e47f93260b1b",
+          "text": "真正的道路在一根绳索上，它不是绷紧在高处，而是贴近地面的。它与其说是供人行走，不如说是用来绊人的。",
+          "original": "Der wahre Weg ist ein Seil, das nicht hoch gespannt ist, sondern knapp über dem Boden. Es scheint eher da zu sein, um zu straucheln, als um darauf zu gehen.",
+          "originalLabel": "德语",
+          "source": "《蓝八开本箴言录》"
+        },
+        {
+          "id": "baa1caff-0a58-4f71-bc81-229c18108c59",
+          "text": "我决不会长大成一个成年人，我将从一个孩子立刻变成一个白发老人。",
+          "original": "",
+          "originalLabel": "",
+          "source": "成长感悟日记"
+        },
+        {
+          "id": "1e59d20a-73cb-47f0-bb59-4da093ef33e1",
+          "text": "德国对俄国宣战——下午游泳，外界滔天动荡与我毫无干系。",
+          "original": "Deutschland erklärt Russland den Krieg – nachmittags schwimme ich.",
+          "originalLabel": "德语",
+          "source": "1914年日记"
+        },
+        {
+          "id": "b4a24ae5-210d-46e7-85ea-641884f372a2",
+          "text": "待在原地不要动，大千世界会主动向你走来，不必费力追逐。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《箴言录》"
+        },
+        {
+          "id": "e422e56a-1e4e-481e-8f01-eff5d65033e2",
+          "text": "抵抗自己的局限性与惰性，抵抗这张办公桌和这把椅子，却次次败下阵来。",
+          "original": "",
+          "originalLabel": "",
+          "source": "上班日记"
+        },
+        {
+          "id": "cd0623eb-72b0-474a-9d88-a5351e064f88",
+          "text": "生活将以铁一般的逻辑粉碎任何发自内心的疏离和背叛倾向。",
+          "original": "",
+          "originalLabel": "",
+          "source": "哲学手记"
+        },
+        {
+          "id": "520ac457-804e-444a-9ff1-45db8375090b",
+          "text": "我当然是毫无计划，毫无前景的，我不能走入未来，而跌入未来、滚入未来，磕磕绊绊地进入未来是我能做到的。",
+          "original": "",
+          "originalLabel": "",
+          "source": "致友人信"
+        },
+        {
+          "id": "3ec15def-1382-4703-b5d3-2031a4abd292",
+          "text": "都是早起惹的祸。人若总是早起，终有一日会变傻瓜。",
+          "original": "",
+          "originalLabel": "",
+          "source": "晨间随笔"
+        },
+        {
+          "id": "1c9d0bbf-5ba8-45a9-916e-85a32a5f1b76",
+          "text": "光勤劳是不够的，蚂蚁也非常勤劳。你在勤劳些什么呢？到头来一无所获。",
+          "original": "",
+          "originalLabel": "",
+          "source": "箴言短文"
+        },
+        {
+          "id": "2c1caf02-8f43-45ba-91a4-b7d30130b30b",
+          "text": "我只有将办公室的工作从这个社交群体中扔出去，才能开始我真正的生活。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场吐槽书信"
+        },
+        {
+          "id": "2e3cad25-da4a-4194-bfae-b734a3816cbe",
+          "text": "我今天想要从床上爬起来的时候，直接又瘫倒了。这背后有一个非常简单的原因——我彻底被工作累垮了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "疲惫日记"
+        },
+        {
+          "id": "0838efe5-7032-4665-bc3c-ef9a8111516a",
+          "text": "我没法长时间地看着他人的眼睛，而不让一丝违拗我全部意愿的细微苦涩钻进我的目光。",
+          "original": "",
+          "originalLabel": "",
+          "source": "社交恐惧手记"
+        },
+        {
+          "id": "5cb05118-b2fb-4111-97b3-d7fc90a97558",
+          "text": "我畏惧工作。当他开始干一件工作时，他就会产生不得不离开家园的那种窒息感觉。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场随笔"
+        },
+        {
+          "id": "9ed24610-4f2e-4744-9e9f-eb55f7de6b71",
+          "text": "我的工作与我的唯一愿望和使命——文学相冲突。我的工作永远无法占有我，但它可能会彻底击碎我。",
+          "original": "",
+          "originalLabel": "",
+          "source": "人生理想书信"
+        },
+        {
+          "id": "8a52272b-2d7e-4af0-8059-3f41d5a54866",
+          "text": "也许有一天我真的可以放弃这份折磨人的工作，只靠文字活下去。",
+          "original": "",
+          "originalLabel": "",
+          "source": "期盼日记"
+        },
+        {
+          "id": "3dffe3c0-f324-48e0-bd9a-a81357575b67",
+          "text": "世间有两大原罪，衍生所有苦难：缺乏耐心、漫不经心。因急躁被逐出天堂，因懒散再也无法回去。",
+          "original": "Es gibt zwei menschliche Hauptsünden, aus welchen sich alle andern ableiten: Ungeduld und Lässigkeit. Wegen der Ungeduld sind sie aus dem Paradiese vertrieben worden, wegen der Lässigkeit kehren sie nicht zurück.",
+          "originalLabel": "德语",
+          "source": "《蓝八开本箴言录》"
+        },
+        {
+          "id": "a2931e9f-40c4-4706-92ef-fb530ab71703",
+          "text": "我从未拥有属于自己的时间，全部被工作与旁人瓜分。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场抱怨长信"
+        },
+        {
+          "id": "bb86bd5b-d1a7-46b6-9797-e7489355d8a7",
+          "text": "哪怕短短一段路程，也足以耗尽我整日全部力气。",
+          "original": "",
+          "originalLabel": "",
+          "source": "外出散步日记"
+        },
+        {
+          "id": "ef720ece-1e21-45ea-89a4-b2a01f811c00",
+          "text": "任何微小责任，都能压垮我脆弱的精神。",
+          "original": "",
+          "originalLabel": "",
+          "source": "日常手记"
+        },
+        {
+          "id": "0ffb785c-69f6-490e-97ed-833cba61d4ac",
+          "text": "办公室的钟表每跳动一秒，我的疲惫便厚重一分。",
+          "original": "",
+          "originalLabel": "",
+          "source": "上班日常记录"
+        },
+        {
+          "id": "926d122d-0491-4d18-ac58-349e4260b366",
+          "text": "我天生不适合群居，人群只会不断损耗我。",
+          "original": "",
+          "originalLabel": "",
+          "source": "致菲莉斯书信"
+        },
+        {
+          "id": "747e9dc3-07ee-4702-8c87-0ae273fd84b2",
+          "text": "劳作不会带来救赎，只会加速自我消耗。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场批判短文"
+        },
+        {
+          "id": "1d2fc13d-3bd1-4050-9b16-538657eae0d6",
+          "text": "人只因承担责任才是自由的，这是生活的真谛。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《审判》"
+        },
+        {
+          "id": "edd9a261-b203-4ec8-837b-8a80accd7006",
+          "text": "心脏是一座两间卧室的房子，一间住着痛苦，一间住着欢乐，人不能笑得太响，否则会吵醒隔壁的痛苦。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《箴言录》"
+        },
+        {
+          "id": "d23aa3a3-7a1c-42c7-a516-c1c7f8d79cb6",
+          "text": "表面看来办公室的人高贵幸运，这只是假象，他们实则更加孤独不幸。",
+          "original": "",
+          "originalLabel": "",
+          "source": "日记"
+        },
+        {
+          "id": "0a974245-e55b-4064-99e2-2e1b49e93d70",
+          "text": "您不知道，沉默包含了多少力量，咄咄逼人的进攻只是一种假象，一种诡计。",
+          "original": "",
+          "originalLabel": "",
+          "source": "书信"
+        },
+        {
+          "id": "2a14391d-3fcb-40db-9324-600c42afa2af",
+          "text": "我们所谓的觉醒，不过是从一个梦境跌入另一个更深的梦境。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔"
+        },
+        {
+          "id": "8a88c879-ec9f-4575-9931-15da3433ed2c",
+          "text": "如今所有人都只想做国王身边的使者，没人愿意成为引路的国王。",
+          "original": "",
+          "originalLabel": "",
+          "source": "使者寓言"
+        },
+        {
+          "id": "b8547b42-fe4a-4e7b-9470-2a671159c60f",
+          "text": "人若长期早起，终有一日会变得麻木愚钝。",
+          "original": "",
+          "originalLabel": "",
+          "source": "日记"
+        },
+        {
+          "id": "31ae0f5d-9090-415a-9321-94b89a0be990",
+          "text": "你对文字的领会深浅，取决于你的孤独有多厚重。",
+          "original": "",
+          "originalLabel": "",
+          "source": "笔记"
+        },
+        {
+          "id": "7a73546c-edb2-4d60-8fae-7e6e0b512f59",
+          "text": "疾病并非邪恶，而是生活递来的警告与助手。",
+          "original": "",
+          "originalLabel": "",
+          "source": "箴言"
+        },
+        {
+          "id": "f9ca9e99-f3e4-4ca6-8c80-a5a0eea4159e",
+          "text": "不要屈从，不要流泪，不必强求合乎情理，别为迎合世俗扭曲自己的灵魂。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔"
+        },
+        {
+          "id": "b970a69e-5bfe-491b-8f9c-8ab123feff95",
+          "text": "人与人之间只剩道理的时候，便是没有感情的时候。",
+          "original": "",
+          "originalLabel": "",
+          "source": "手记"
+        }
+      ]
+    },
+    {
+      "id": "anton-pavlovich-chekhov",
+      "nameCn": "安东·巴甫洛维奇·契诃夫",
+      "nameEn": "Anton Pavlovich Chekhov",
+      "ip": "俄罗斯",
+      "lifespan": "1860.1.29 ~ 1904.7.15（44岁）水瓶座",
+      "profession": "短篇小说家、剧作家、医生",
+      "bio": "世界短篇三巨头，常年为钱发愁",
+      "tags": [
+        "现实主义",
+        "穷困",
+        "人间细碎",
+        "丧系日常"
+      ],
+      "quotes": [
+        {
+          "id": "3cf84221-b0c4-40e1-ba59-0e52db4db6ab",
+          "text": "春天十分美好，然而没有钱，真是倒霉。",
+          "original": "Весна прекрасна, но денег нет, одно несчастье.",
+          "originalLabel": "俄语",
+          "source": "1897年致弗·尼·阿尔古京斯基-多尔戈鲁科夫，《契诃夫书信集》"
+        },
+        {
+          "id": "d96b6be3-86cd-4b4d-b3c9-6c549fb251a9",
+          "text": "生活颇不容易。多半夏天就会有钱了。啊，但愿如此！",
+          "original": "Жить нелегко. Летом, вероятно, будут деньги. О, если бы так!",
+          "originalLabel": "俄语",
+          "source": "致兄长亚历山大书信，《契诃夫书信集》"
+        },
+        {
+          "id": "bfb2a6c6-3d3e-48b6-8960-2ef8be40d940",
+          "text": "除了这种流行病以外，我还等待另外一种流行病，这种病是一定会传布到我的庄园来的。那就是缺钱。",
+          "original": "Кроме этой эпидемии я жду другую, которая обязательно придет в мое поместье – это отсутствие денег.",
+          "originalLabel": "俄语",
+          "source": "梅利霍沃庄园时期致友人信，《契诃夫书信集》"
+        },
+        {
+          "id": "369304d5-1730-4cc1-bcef-8f92deb27de4",
+          "text": "我希望来年春天我会有一大笔钱。我是根据迷信来判断的：没有钱就是快有钱了。",
+          "original": "Надеюсь, следующей весной у меня будет большая сумма денег. Я сужу по суеверию: нет денег – скоро будут.",
+          "originalLabel": "俄语",
+          "source": "致娜·米·林特瓦烈娃书信，《契诃夫书信集》"
+        },
+        {
+          "id": "1204a0fd-8c96-40aa-a809-f36ce4eb4a87",
+          "text": "我要拼命尽量多挣一些钱，以便夏天可以什么事情都不干……",
+          "original": "Я постараюсь заработать как можно больше денег, чтобы летом ничего не делать…",
+          "originalLabel": "俄语",
+          "source": "致阿·尼·普列谢耶夫书信，《契诃夫书信集》"
+        },
+        {
+          "id": "e9ae7c37-74d8-477d-83a9-5f0c7517e4ba",
+          "text": "我的自我感觉不差，体重没有减轻，对未来我充满希望。天气好极了，钱几乎没有。",
+          "original": "Самочувствие хорошее, вес не уменьшился, надежды на будущее есть. Погода прекрасна, денег почти нет.",
+          "originalLabel": "俄语",
+          "source": "1897年致苏沃林，《契诃夫书信集：天气好极了，钱几乎没有》"
+        },
+        {
+          "id": "bb615535-1328-4523-ae64-b86e2b5aae7c",
+          "text": "没有钱用，但又懒得去挣。",
+          "original": "Денег нет, но лень зарабатывать.",
+          "originalLabel": "俄语",
+          "source": "1886年致尼·亚·列伊金，《契诃夫书信集》"
+        },
+        {
+          "id": "bf747ccf-6585-4391-9abf-d42dc81b6327",
+          "text": "我认为我休息一下是合法的。",
+          "original": "Считаю, что мне законно отдохнуть.",
+          "originalLabel": "俄语",
+          "source": "致阿·尼·普列谢耶夫谈创作倦怠书信"
+        },
+        {
+          "id": "4b7fb154-c1cc-4f64-a640-82eb0b32d08d",
+          "text": "没有钱没有勋章，没有官衔，债务倒是有的。",
+          "original": "Нет денег, нет орденов, нет чинов, но есть долги.",
+          "originalLabel": "俄语",
+          "source": "1895年致维·维·比里宾，《契诃夫书信集》"
+        },
+        {
+          "id": "6bf32e0a-9dfa-4250-ad5a-56bfbd23980a",
+          "text": "我寂寞我气恼，钱去得太快，我要破产了，我要从烟囱里飞出去。",
+          "original": "Мне одиноко, я зол, деньги уходят слишком быстро, я разорюсь, готов вылететь через трубу.",
+          "originalLabel": "俄语",
+          "source": "致妹妹玛丽亚家书，落魄时期手记"
+        },
+        {
+          "id": "4391289c-bfb0-48c3-abba-46194d2ec54b",
+          "text": "我很伤心，因为没有钱了，我像狼一样叫起来。",
+          "original": "Мне очень грустно, потому что денег нет, я вою как волк.",
+          "originalLabel": "俄语",
+          "source": "早年穷困诉苦私人书信"
+        },
+        {
+          "id": "4b132b23-5a76-45e3-86e8-1512066ea8ad",
+          "text": "没有钱，没有钱，而且不会很快就有，这可诅咒的钱困住所有人。",
+          "original": "Нет денег, нет денег, и скоро не будет, эти проклятые деньги держат всех в плену.",
+          "originalLabel": "俄语",
+          "source": "私人诉苦家书"
+        },
+        {
+          "id": "7b63bf7f-ff0b-4b63-aa2a-5bea99469888",
+          "text": "钞票在口袋里像雪糕一样地融化，赚多少花多少，留不住分毫。",
+          "original": "Деньги тают в кармане как мороженое, сколько заработаю – столько потрачу, ничего не остаётся.",
+          "originalLabel": "俄语",
+          "source": "庄园生活随笔"
+        },
+        {
+          "id": "993f2890-a2fa-4f86-943f-a8e94a08924e",
+          "text": "我做梦都想搞到四万卢布，这样就能彻底停下笔，不用再为生计写作。",
+          "original": "Мечтаю достать сорок тысяч рублей, чтобы навсегда бросить перо и не писать ради пропитания.",
+          "originalLabel": "俄语",
+          "source": "生活愿望书信"
+        },
+        {
+          "id": "0819ea65-ab1a-4cfd-8618-0c33cf5b8858",
+          "text": "没有钱用，但又懒得去挣钱。请您给我寄一些钱来吧！",
+          "original": "Денег нет, но лень зарабатывать. Пожалуйста, пришлите мне немного денег!",
+          "originalLabel": "俄语",
+          "source": "求助友人信件"
+        },
+        {
+          "id": "25de2461-893c-4929-904e-64016577420a",
+          "text": "我行动并不迟缓，如果我有钱的话，我是会到处游历散心的。",
+          "original": "Я не медлителен, если бы у меня были деньги, я бы путешествовал повсюду для души.",
+          "originalLabel": "俄语",
+          "source": "旅行随笔"
+        },
+        {
+          "id": "a3030cec-9d13-4f59-bb52-86e61273a3c0",
+          "text": "千真万确：一个小钱也没有！我还没学会借债，那是一种极大的麻烦事！",
+          "original": "Правда, ни копейки нет! Я не научился занимать деньги, это огромная морока!",
+          "originalLabel": "俄语",
+          "source": "1887年致列依金生活吐槽信"
+        },
+        {
+          "id": "b25ea0d6-540b-4e4e-9fb6-537c11f7496d",
+          "text": "整日伏案写作，身心俱疲，可稿费寥寥无几，实在不值。",
+          "original": "Целыми днями пишу за столом, измучен душой и телом, а гонорар мизерный, не стоит таких усилий.",
+          "originalLabel": "俄语",
+          "source": "创作日记"
+        },
+        {
+          "id": "e24754c0-b330-4316-a27f-c4ae3bd1d233",
+          "text": "明明向往闲散自由，却不得不为碎银几两不停动笔。",
+          "original": "Мечтаю о свободном безделье, но вынужден не переставать писать за мелкие монеты.",
+          "originalLabel": "俄语",
+          "source": "自我感慨书信"
+        },
+        {
+          "id": "e119b1f0-3e24-4075-b63a-1e5eec79d1e3",
+          "text": "再好的风景，囊中羞涩时，只觉得满目愁苦。",
+          "original": "Какой бы красивый ни был пейзаж, когда карман пуст – всё видится печальным.",
+          "originalLabel": "俄语",
+          "source": "外出游历手记"
+        },
+        {
+          "id": "4ad61056-6c60-4e8e-8abf-b42ea9e3d52a",
+          "text": "满心想要游山玩水，口袋空空寸步难行。",
+          "original": "Хочу путешествовать по горам и рекам, но без денег никуда не пойти.",
+          "originalLabel": "俄语",
+          "source": "出游家书"
+        },
+        {
+          "id": "72a8c47b-d04a-4a2f-9920-e331b18dda66",
+          "text": "稿费微薄，不足以支撑半日闲散度日。",
+          "original": "Гонорар слишком мал, чтобы позволить себе даже полдня отдыха.",
+          "originalLabel": "俄语",
+          "source": "创作日记"
+        },
+        {
+          "id": "ceedb5b8-8843-4947-8e4d-0d5a406c2a21",
+          "text": "每日提笔写作，只为换取糊口碎银，毫无乐趣可言。",
+          "original": "Каждый день берусь за перо лишь за монеты на еду, никакого удовольствия нет.",
+          "originalLabel": "俄语",
+          "source": "私人随笔"
+        },
+        {
+          "id": "29895eb3-844c-4e79-839f-e0a6576334cc",
+          "text": "有钱时转瞬挥霍，没钱时整日愁苦，循环往复。",
+          "original": "Когда есть деньги – быстро проматываю, когда нет – целый день грущу, так по кругу.",
+          "originalLabel": "俄语",
+          "source": "生活手记"
+        },
+        {
+          "id": "e84cb161-f275-4822-aafc-b4a71530fb7d",
+          "text": "向往田园闲散，却被生计逼迫不停伏案。",
+          "original": "Мечтаю о деревенском покое, но нужда заставляет сидеть за письменным столом.",
+          "originalLabel": "俄语",
+          "source": "乡村书信"
+        },
+        {
+          "id": "4d185d34-688f-49d2-9194-6c3e7df78ef1",
+          "text": "世间所有美好，都需要钱财作为入场券。",
+          "original": "Все прекрасное в мире требует денег как входной билет.",
+          "originalLabel": "俄语",
+          "source": "感慨短文"
+        },
+        {
+          "id": "6052c7b3-b49e-44b0-acfc-39a5f33d0a10",
+          "text": "拮据生活磨去所有浪漫，只剩现实愁苦。",
+          "original": "Бедная жизнь стирает всю романтику, оставляя лишь земные печали.",
+          "originalLabel": "俄语",
+          "source": "落魄时期日记"
+        },
+        {
+          "id": "1c904bb2-963f-4783-b20d-dea2f1c9aae9",
+          "text": "懒得谋生，又无法躺平，卡在两难之间煎熬。",
+          "original": "Лень зарабатывать на жизнь, но и без работы не прожить, мучаюсь между двумя крайностями.",
+          "originalLabel": "俄语",
+          "source": "致友人求助信"
+        },
+        {
+          "id": "627de46a-399a-4fb4-a7c2-9aed2e4e145e",
+          "text": "一辈子为钱财奔波，从未有一日随心所欲。",
+          "original": "Всю жизнь бегаю за деньгами, ни одного дня не жил как хочу.",
+          "originalLabel": "俄语",
+          "source": "晚年回忆随笔"
+        },
+        {
+          "id": "2b57321c-e9e7-4fcf-8567-4d8bbf32e424",
+          "text": "写作本是热爱，最后沦为谋生苦役。",
+          "original": "Писательство было моей любовью, а стало каторгой для пропитания.",
+          "originalLabel": "俄语",
+          "source": "创作吐槽书信"
+        },
+        {
+          "id": "19e48d24-0918-44ad-8546-f66dd7392363",
+          "text": "微薄收入支撑不起半分自由松弛。",
+          "original": "Скромный доход не даёт ни капли свободы и спокойствия.",
+          "originalLabel": "俄语",
+          "source": "生活账单手记"
+        },
+        {
+          "id": "8d431afa-8296-49f2-b88a-a8b4640cf77d",
+          "text": "羡慕旁人无忧度日，自己终日为钱烦忧。",
+          "original": "Завидую тем, кто живёт без забот, а я весь день тревожусь из-за денег.",
+          "originalLabel": "俄语",
+          "source": "私人短笺"
+        },
+        {
+          "id": "561ee7c4-1221-48c8-a331-7cb0fbf4d4d5",
+          "text": "即便闭门不出，缺钱的焦虑依旧萦绕不散。",
+          "original": "Даже не выходя из дома, тревога из-за отсутствия денег не отстаёт.",
+          "originalLabel": "俄语",
+          "source": "居家随笔"
+        },
+        {
+          "id": "5c35c95d-0afa-4f9c-91e6-34b0a9d4cf57",
+          "text": "幻想一夜富足，不必再为生计劳碌。",
+          "original": "Мечтаю мгновенно разбогатеть, чтобы больше не трудиться ради пропитания.",
+          "originalLabel": "俄语",
+          "source": "睡前日记"
+        },
+        {
+          "id": "f1a952b7-1c83-4751-bc8d-0bbe3f250d30",
+          "text": "赚钱辛苦，花钱迅速，永远收支失衡。",
+          "original": "Зарабатывать тяжело, тратить быстро, доходы никогда не покрывают расходы.",
+          "originalLabel": "俄语",
+          "source": "日常记账手记"
+        },
+        {
+          "id": "63315b18-3cef-4dba-a7bc-027ebe8eb8cb",
+          "text": "被迫应酬赚钱，内心满是抵触疲惫。",
+          "original": "Вынужден ходить на приёмы ради заработка, внутри полон сопротивления и усталости.",
+          "originalLabel": "俄语",
+          "source": "社交书信"
+        },
+        {
+          "id": "6cc733ad-ed36-449b-8136-4ad10c0c2d89",
+          "text": "穷困是长久缠身的顽疾，难以摆脱。",
+          "original": "Бедность – это хроническая болезнь, от которой трудно избавиться.",
+          "originalLabel": "俄语",
+          "source": "底层生活短文"
+        },
+        {
+          "id": "3879c26e-e45e-451a-aa75-cf64d89cf2cb",
+          "text": "再好的文笔，也填不满空空钱袋。",
+          "original": "Какой бы хороший ни был слог, он не наполнит пустой кошелёк.",
+          "originalLabel": "俄语",
+          "source": "创作感悟手稿"
+        },
+        {
+          "id": "772d9247-5b43-4013-af83-7dec3803bcde",
+          "text": "只求钱财充裕，换整日不用劳作休息。",
+          "original": "Только бы денег хватало, чтобы целый день отдыхать без труда.",
+          "originalLabel": "俄语",
+          "source": "生活愿望书信"
+        }
+      ]
+    },
+    {
+      "id": "lev-nikolayevich-tolstoy",
+      "nameCn": "列夫·托尔斯泰",
+      "nameEn": "Lev Nikolayevich Tolstoy",
+      "ip": "俄罗斯",
+      "lifespan": "1828.9.9 ~ 1910.11.20（82岁）处女座",
+      "profession": "文豪、哲学家、伯爵",
+      "bio": "史诗文学巨匠，晚年倦怠厌世",
+      "tags": [
+        "宏大叙事",
+        "精神内耗",
+        "人生虚无",
+        "田园"
+      ],
+      "quotes": [
+        {
+          "id": "e75ffa06-806d-4c2a-b001-1c9aebd0eb7a",
+          "text": "很累。不想爱了，也不想劳动了，只想静静放空。",
+          "original": "",
+          "originalLabel": "",
+          "source": "1858年9月20日日记"
+        },
+        {
+          "id": "604f31d6-374c-4510-a86d-acef55d0dea1",
+          "text": "看透世间纷争，只觉一切劳碌都毫无意义。",
+          "original": "",
+          "originalLabel": "",
+          "source": "哲学手记"
+        },
+        {
+          "id": "2a987187-f96d-4327-bed3-0da79dcb234b",
+          "text": "旁人追逐功名忙碌，我只觉徒劳疲惫。",
+          "original": "",
+          "originalLabel": "",
+          "source": "社会观察短文"
+        },
+        {
+          "id": "56d2a176-dbc4-4ee2-93ba-c4271176a9d5",
+          "text": "所有奋斗到最后，只剩无尽疲惫空虚。",
+          "original": "",
+          "originalLabel": "",
+          "source": "自我剖析手稿"
+        },
+        {
+          "id": "a366be26-80d9-4355-bb95-18ddd43e3ef6",
+          "text": "强迫自己参与劳作社交，内心万般抗拒。",
+          "original": "",
+          "originalLabel": "",
+          "source": "社交书信"
+        },
+        {
+          "id": "f38f0577-d765-4b4f-a885-bae661bca089",
+          "text": "琐事填满全部光阴，没有片刻独处松弛。",
+          "original": "",
+          "originalLabel": "",
+          "source": "家庭手记"
+        },
+        {
+          "id": "0b1bd574-5cb4-4ce8-a75d-b1b7460b08c1",
+          "text": "世间劳碌皆无意义，唯有静歇稍得安宁。",
+          "original": "",
+          "originalLabel": "",
+          "source": "晚年箴言短文"
+        }
+      ]
+    },
+    {
+      "id": "oscar-wilde",
+      "nameCn": "奥斯卡·王尔德",
+      "nameEn": "Oscar Wilde",
+      "ip": "爱尔兰（英国）",
+      "lifespan": "1854.10.16 ~ 1900.11.30（46岁）天秤座",
+      "profession": "唯美主义作家、诗人、剧作家",
+      "bio": "享乐至上，拒绝辛苦谋生",
+      "tags": [
+        "唯美",
+        "慵懒",
+        "反内卷",
+        "浪漫毒舌"
+      ],
+      "quotes": [
+        {
+          "id": "07a2fafa-f487-411f-a2be-52e0499e24b8",
+          "text": "我不想谋生，我要生活。",
+          "original": "I don't want to earn my living; I want to live.",
+          "originalLabel": "英语",
+          "source": "《无足轻重的女人》"
+        },
+        {
+          "id": "20ecd114-8aff-4ea1-ac3f-e471ef495881",
+          "text": "为了赢回我的青春，我什么都愿意做。除了锻炼、早起、做个对社会有用的人。",
+          "original": "I would do anything to get back my youth except exercise, get up early, or be useful to society.",
+          "originalLabel": "英语",
+          "source": "私人谈话录"
+        },
+        {
+          "id": "2f1d047c-babc-4960-a342-d779ed213254",
+          "text": "我什么都能抗拒，除了诱惑。",
+          "original": "I can resist everything except temptation.",
+          "originalLabel": "英语",
+          "source": "《道林·格雷的画像》"
+        },
+        {
+          "id": "b36bf516-e70c-4d3b-9c5e-9618f7ed45ed",
+          "text": "世人都忙着谋生，唯有我只想享受人间欢愉。",
+          "original": "",
+          "originalLabel": "",
+          "source": "散文随笔"
+        },
+        {
+          "id": "9475087a-a132-4c30-86b0-0f3804aa032d",
+          "text": "早起劳作是世间最无趣、最折磨人的酷刑。",
+          "original": "",
+          "originalLabel": "",
+          "source": "生活观念短文"
+        },
+        {
+          "id": "be3a940b-b145-44ef-bd32-f9e076697a1c",
+          "text": "有用的人生乏味至极，虚度时光才算真正活着。",
+          "original": "",
+          "originalLabel": "",
+          "source": "美学手记"
+        },
+        {
+          "id": "11cbaef0-35af-43b4-9f43-636915b9922c",
+          "text": "不必强迫自己勤勉，顺从本心便是最好的活法。",
+          "original": "",
+          "originalLabel": "",
+          "source": "书信集"
+        },
+        {
+          "id": "ac4b6003-65ee-467e-95e9-cba27c543aaf",
+          "text": "早起劳作是最低俗无趣的生存方式。",
+          "original": "Getting up early to work is the most vulgar and dull way to live.",
+          "originalLabel": "英语",
+          "source": "美学随笔"
+        },
+        {
+          "id": "3540db41-7622-4923-a8bb-ca296f837204",
+          "text": "谋生磨灭浪漫灵魂，虚度时光方能感知美好。",
+          "original": "",
+          "originalLabel": "",
+          "source": "散文片段"
+        },
+        {
+          "id": "ad61262f-86c8-496c-9045-92541dacc79d",
+          "text": "绝不强迫自己勤勉上进，顺从慵懒本心度日。",
+          "original": "",
+          "originalLabel": "",
+          "source": "生活随笔"
+        }
+      ]
+    },
+    {
+      "id": "bertrand-russell",
+      "nameCn": "伯特兰·罗素",
+      "nameEn": "Bertrand Russell",
+      "ip": "英国",
+      "lifespan": "1872.5.18 ~ 1970.2.2（98岁）金牛座",
+      "profession": "哲学家、数学家、诺贝尔文学奖得主",
+      "bio": "看透工作焦虑，提倡松弛闲暇",
+      "tags": [
+        "理性",
+        "反过劳",
+        "幸福哲学",
+        "社会观察"
+      ],
+      "quotes": [
+        {
+          "id": "de27f465-0d6a-4158-be25-8d8fc8077f87",
+          "text": "临近神经崩溃的症状之一，是坚信自己的工作极为重要。",
+          "original": "One of the symptoms of approaching nervous breakdown is the belief that one's work is terribly important.",
+          "originalLabel": "英语",
+          "source": "《幸福之路》"
+        },
+        {
+          "id": "40ab4204-8827-4e18-8986-10e120e59f89",
+          "text": "闲暇时无所适从，忙碌时身心俱疲，人的一生就在这两种煎熬间摇摆。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《幸福之路》"
+        },
+        {
+          "id": "a6ae08dd-a459-4b0e-90b2-25a69a62ef8f",
+          "text": "人们过度看重工作，误以为劳碌就能填补内心空洞。",
+          "original": "",
+          "originalLabel": "",
+          "source": "哲学随笔"
+        },
+        {
+          "id": "89bad3bd-b8b9-4a83-8db1-28121bfe8088",
+          "text": "绝大多数工作，只是无意义的重复，消耗人的生命力。",
+          "original": "",
+          "originalLabel": "",
+          "source": "社会观察短文"
+        },
+        {
+          "id": "3f3c8605-e5ae-4e40-a060-fdea0a876a41",
+          "text": "懂得享受闲散，才拥有获得快乐的能力。",
+          "original": "",
+          "originalLabel": "",
+          "source": "人生感悟手记"
+        },
+        {
+          "id": "0e06b47d-46fd-4816-9054-62b8c13b0c75",
+          "text": "无休止的劳作只会催生焦虑，而非安稳幸福。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《幸福之路》"
+        }
+      ]
+    },
+    {
+      "id": "albert-camus",
+      "nameCn": "阿尔贝·加缪",
+      "nameEn": "Albert Camus",
+      "ip": "法国（阿尔及利亚）",
+      "lifespan": "1913.11.7 ~ 1960.1.4（46岁）天蝎座",
+      "profession": "哲学家、小说家、存在主义代表",
+      "bio": "荒诞哲学奠基人，接纳疲惫与虚无",
+      "tags": [
+        "荒诞",
+        "西西弗",
+        "反抗",
+        "治愈倦怠"
+      ],
+      "quotes": [
+        {
+          "id": "edd53591-16cf-4241-b757-f1c2d05ec798",
+          "text": "付出一小部分的人生以免丧失整个生命，是很正常的。每天六到八个小时，免得饿死。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "21e74550-611a-401d-a68a-823668c1eaa7",
+          "text": "起床、电车、办公室四小时、吃饭、电车、四小时工作、吃饭、睡觉，周一到周六循环往复。直到某天心里冒出一句“为什么”，厌倦裹挟一切。",
+          "original": "Le lever, le tram, quatre heures de bureau ou d'usine, le repas, le tram, quatre heures de travail, le dîner, le sommeil, lundi mardi mercredi jeudi vendredi samedi selon le même rythme.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "52e6a1b4-f97b-45b4-877d-9e0165775139",
+          "text": "我们每个人都是自身的陌生人，永远无法完整认清自己。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "5f100e7f-34eb-4ee3-b81b-49d2055c2471",
+          "text": "日复一日重复的平庸，慢慢磨平人所有感知。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《快乐的死》"
+        },
+        {
+          "id": "3add1343-eaf7-404d-a388-a710e2c5a2ce",
+          "text": "欲望最终只会归于厌倦。",
+          "original": "Tout désir finit par l'ennui.",
+          "originalLabel": "法语",
+          "source": "《加缪手记》"
+        },
+        {
+          "id": "55cf86d2-b392-4271-ab84-3ff12fb4e4dd",
+          "text": "日复一日推石上山，徒劳往复，便是大多数人的一生。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "13eb2247-9dfa-43c9-9a1b-5802523f20e2",
+          "text": "单调日常会吞噬所有热情，只剩无边乏味。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔残稿"
+        },
+        {
+          "id": "d6bb1dd8-0cb0-4fcf-96f0-6e332fa55fd7",
+          "text": "每日交出六到八小时的人生，只为换取糊口的钱财，避免饿死，这本就是常人的生存常态。",
+          "original": "On abandonne six à huit heures de sa vie chaque jour pour manger, c'est la condition ordinaire de l'existence.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "7c2b9d91-37dd-431e-bb07-9259b58d31b2",
+          "text": "日复一日重复的平庸，磨平人感知欢喜与悲伤的全部能力。",
+          "original": "La banalité répétée des jours émousse la capacité à ressentir joie et chagrin.",
+          "originalLabel": "法语",
+          "source": "《快乐的死》"
+        },
+        {
+          "id": "da607860-0cf6-4d70-ac85-bfe34cd18ce7",
+          "text": "荒诞诞生于人类对统一的渴求，与世界毫无逻辑的割裂之间。",
+          "original": "L'absurde naît de la confrontation entre le désir humain d'unité et le silence du monde.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "d9ff89ed-015f-4a8a-9da5-16ff2a623107",
+          "text": "世界并不合乎情理，仅此而已，不必强求它给予我们意义。",
+          "original": "Le monde n'est pas raisonnable, c'est tout, il ne faut pas lui demander de sens.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "ae7bfb31-518f-46ff-b9cf-5a902a5b0ca3",
+          "text": "反抗虚无，不是追寻永恒，而是接纳当下全部的痛苦与平淡。",
+          "original": "Se révolter contre le néant n'est pas chercher l'éternité, mais accepter la peine et la platitude du présent.",
+          "originalLabel": "法语",
+          "source": "随笔"
+        },
+        {
+          "id": "60d54c06-a02e-4b98-af9a-f2fa58d7b4ee",
+          "text": "清晨被迫起身奔赴工作，是无数人日复一日无法逃脱的酷刑。",
+          "original": "Se lever de force chaque matin pour aller travailler est un supplice quotidien inéluctable pour beaucoup.",
+          "originalLabel": "法语",
+          "source": "私人日记"
+        },
+        {
+          "id": "7cae7ba2-ac78-426d-92de-1b79c1eaceda",
+          "text": "所谓幸福，从来不是摆脱疲惫，而是学会与长久的倦怠共存。",
+          "original": "Le bonheur n'est pas l'absence de fatigue, mais l'apprentissage de vivre avec elle.",
+          "originalLabel": "法语",
+          "source": "《加缪手记》"
+        },
+        {
+          "id": "5e3ba0f8-8534-407b-905a-659dfcebdaf0",
+          "text": "人被束缚在循环的日程里，钟表分割人生，却从未给予片刻喘息。",
+          "original": "L'homme est emprisonné dans un emploi du temps cyclique, l'horloge divise sa vie sans lui offrir de répit.",
+          "originalLabel": "法语",
+          "source": "社会观察短文"
+        },
+        {
+          "id": "48487bb8-3ee6-4af0-b712-1e472534f839",
+          "text": "长久的劳作不会塑造灵魂，只会缓慢磨损掉人全部鲜活的感知。",
+          "original": "Le travail long ne forme pas l'âme, il use lentement toute sensibilité vive.",
+          "originalLabel": "法语",
+          "source": "哲学短评"
+        },
+        {
+          "id": "3f6ac10d-0c30-4d85-92fe-f9f07dbffb3e",
+          "text": "我们拼命奔波谋生，到头来却找不到支撑这份辛苦的任何价值。",
+          "original": "Nous nous épuisons à gagner notre vie sans trouver de valeur qui justifie cette peine.",
+          "originalLabel": "法语",
+          "source": "手记片段"
+        },
+        {
+          "id": "1c567c74-12da-4fd8-a8bf-ee465161dcf5",
+          "text": "厌倦是荒诞最直白的表象，当人对每日重复的一切失去期待，荒诞便浮现。",
+          "original": "L'ennui est la forme la plus simple de l'absurde, quand l'homme perd tout espoir dans ses routines quotidiennes.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "495831cf-c74a-4e58-87d8-03c7581a298c",
+          "text": "没有人能永远保持昂扬，倦怠、麻木、放空，才是人类最真实的常态。",
+          "original": "Personne ne peut rester éternellement enthousiaste, la fatigue, l'engourdissement et le vide sont notre vérité ordinaire.",
+          "originalLabel": "法语",
+          "source": "私人随笔"
+        },
+        {
+          "id": "9df13d68-c5bf-4c0e-9aa8-430d62bda1bd",
+          "text": "即便看透生活徒劳，人依旧要日复一日继续走下去，这便是反抗。",
+          "original": "Même en voyant la vanité de la vie, il faut continuer jour après jour, c'est la révolte.",
+          "originalLabel": "法语",
+          "source": "哲学随笔"
+        },
+        {
+          "id": "9bf86734-db39-4c8e-9d84-f4353c4c2c71",
+          "text": "办公室的空气沉闷压抑，拥挤人群之中，孤独反而会加倍汹涌。",
+          "original": "L'air du bureau est lourd et oppressant, la solitude devient plus intense au milieu des foules.",
+          "originalLabel": "法语",
+          "source": "生活手记"
+        },
+        {
+          "id": "7f08ae38-2944-4bc8-9ea6-6c317822bbec",
+          "text": "人们用忙碌掩盖内心空洞，可停下的瞬间，虚无会立刻席卷而来。",
+          "original": "Les hommes cachent leur vide intérieur par l'agitation, mais dès qu'ils s'arrêtent, le néant revient aussitôt.",
+          "originalLabel": "法语",
+          "source": "《加缪手记》"
+        },
+        {
+          "id": "21c31916-95e2-4368-8ea2-04c9beb646c9",
+          "text": "一日三餐、工作、睡眠，简单的循环构筑人的一生，简单，也无比煎熬。",
+          "original": "Les repas, le travail, le sommeil, ce cycle simple construit toute une vie, simple et terriblement pénible.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "e312a564-dd8a-4ea2-a9b2-a3086df9b011",
+          "text": "不必痛恨日复一日的平庸，平庸才是绝大多数人一辈子的底色。",
+          "original": "Il ne faut pas haïr la platitude quotidienne, elle est le fond de la vie de la plupart des hommes.",
+          "originalLabel": "法语",
+          "source": "随笔残稿"
+        },
+        {
+          "id": "f07d4fb6-ae36-4932-8d5d-8951b5bdd6fd",
+          "text": "疲惫不是一时的情绪，它扎根在生存本身，伴随人从清晨到深夜。",
+          "original": "La fatigue n'est pas une humeur passagère, elle est enracinée dans l'existence, du matin au soir.",
+          "originalLabel": "法语",
+          "source": "手记"
+        },
+        {
+          "id": "a443c45f-8cd3-40f6-953a-51c53bf72eb1",
+          "text": "我渴望一段无需遵守时间表、不用追赶时间的日子。",
+          "original": "Je désire des jours sans horaire à respecter, sans avoir à courir après le temps.",
+          "originalLabel": "法语",
+          "source": "私人书信"
+        },
+        {
+          "id": "c85625b8-1040-4fba-a41e-855effc9c409",
+          "text": "人类发明工作，用来填满漫长时光，却没料到它会掏空人的灵魂。",
+          "original": "L'homme a inventé le travail pour remplir les longues journées, sans imaginer qu'il viderait son âme.",
+          "originalLabel": "法语",
+          "source": "社会短评"
+        },
+        {
+          "id": "bd0867cf-8e0f-4625-9351-3e85df23f49b",
+          "text": "当每日的行程毫无变化，人会慢慢失去感受快乐的能力。",
+          "original": "Quand chaque journée suit le même chemin, l'homme perd peu à peu la capacité de ressentir du bonheur.",
+          "originalLabel": "法语",
+          "source": "《快乐的死》"
+        },
+        {
+          "id": "3261c1ce-d73f-456b-b037-54c58aa740a6",
+          "text": "所谓谋生，本质就是持续出让自身精力，换取短暂生存资格。",
+          "original": "Gagner sa vie revient à céder constamment son énergie pour obtenir le droit de survivre brièvement.",
+          "originalLabel": "法语",
+          "source": "哲学手记"
+        },
+        {
+          "id": "c1849ab1-bb04-4c76-863c-e90268601510",
+          "text": "深夜清醒时格外清晰地感知，白天所有忙碌都毫无意义。",
+          "original": "Dans les nuits d'insomnie, on perçoit clairement que toute l'agitation du jour est sans sens.",
+          "originalLabel": "法语",
+          "source": "日记片段"
+        },
+        {
+          "id": "a95b87b8-23d8-47ea-9f98-b23fe5da212e",
+          "text": "不必强迫自己振作，接纳倦怠，也是与自我和解的一种方式。",
+          "original": "Il ne faut pas se forcer à aller mieux, accepter sa fatigue est une forme de paix avec soi.",
+          "originalLabel": "法语",
+          "source": "《加缪手记》"
+        },
+        {
+          "id": "320deb1b-3715-4e4f-8642-8b4fb0888991",
+          "text": "无数人一辈子困在两点一线之间，从未拥有一段随心所欲的时光。",
+          "original": "Beaucoup d'hommes restent toute leur vie entre deux points, sans jamais disposer de jours à leur guise.",
+          "originalLabel": "法语",
+          "source": "观察随笔"
+        },
+        {
+          "id": "26f51e18-2f84-4dbf-bef3-874ae9e6e47e",
+          "text": "厌倦会慢慢渗透进骨骼，让人做任何事都提不起半分兴致。",
+          "original": "L'ennui pénètre peu à peu les os, rendant toute action sans attrait.",
+          "originalLabel": "法语",
+          "source": "私人随笔"
+        },
+        {
+          "id": "6b49cae7-542a-40c5-8464-42f56cb232c5",
+          "text": "西西弗的痛苦不在于推石，而在于知晓一切重复都是徒劳，却依旧要继续。",
+          "original": "La souffrance de Sisyphe n'est pas de pousser la pierre, mais de savoir que tout est vain et de devoir continuer.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "e6154182-945d-42c4-84e7-84550306a203",
+          "text": "日复一日的早起奔波，磨去人心里全部浪漫与期待。",
+          "original": "Se lever et courir chaque matin use toute la romance et tous les espoirs du cœur.",
+          "originalLabel": "法语",
+          "source": "生活短文"
+        },
+        {
+          "id": "8dd2bdb9-75fc-4a46-9ba5-8ef6733902db",
+          "text": "生存最大的枷锁，就是日复一日无法挣脱的固定日程。",
+          "original": "La plus grande chaîne de l'existence est l'emploi du temps quotidien dont on ne peut se libérer.",
+          "originalLabel": "法语",
+          "source": "哲学短评"
+        },
+        {
+          "id": "f8bdc036-d2cd-4351-888b-ac8c558414d4",
+          "text": "我常常深陷麻木，对外界一切悲喜都无法产生共鸣。",
+          "original": "Je sombre souvent dans l'engourdissement, incapable de partager les joies et peines du monde extérieur.",
+          "originalLabel": "法语",
+          "source": "私人日记"
+        },
+        {
+          "id": "e927e4d1-393d-4edd-8b7c-61f2a6de8e24",
+          "text": "所有人都在重复相同的生存轨迹，却各自背负独属于自己的疲惫。",
+          "original": "Tous les hommes suivent les mêmes chemins d'existence, chacun portant sa propre fatigue.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "aed9c1e8-26bb-4612-90b8-6aefd5755184",
+          "text": "不要寄希望于未来消解当下的疲惫，疲惫会随岁月不断累积。",
+          "original": "Il ne faut pas espérer que l'avenir efface la fatigue présente, elle s'accumule avec les années.",
+          "originalLabel": "法语",
+          "source": "手记片段"
+        },
+        {
+          "id": "8f4d7656-2377-48ed-8c47-2314fd36e163",
+          "text": "日常的重复消解宏大理想，最后只剩下日复一日糊口的琐碎。",
+          "original": "La répétition quotidienne efface les grands idéaux, ne laissant que les petites choses pour survivre.",
+          "originalLabel": "法语",
+          "source": "《快乐的死》"
+        },
+        {
+          "id": "f67b914b-c637-4645-9550-82a7d3b24555",
+          "text": "荒诞藏在每个平凡清晨，藏在被迫起床奔赴工作的瞬间。",
+          "original": "L'absurde se cache dans chaque matin ordinaire, au moment où l'on doit se lever pour aller travailler.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "6e1e0a21-7eda-4ef3-bb65-b4f669a2d612",
+          "text": "我们消耗青春、精力、情绪，只为换取维持生存微薄的报酬。",
+          "original": "Nous consommons notre jeunesse, notre énergie et nos sentiments pour une maigre rémunération de survie.",
+          "originalLabel": "法语",
+          "source": "社会手记"
+        },
+        {
+          "id": "23c700fb-a0aa-47ff-adb9-8ae4ff72ec3e",
+          "text": "放空、静止、什么都不做，是对抗日复一日消耗的唯一避难所。",
+          "original": "Le vide, l'immobilité, ne rien faire, c'est le seul refuge contre l'usure quotidienne.",
+          "originalLabel": "法语",
+          "source": "私人日记"
+        },
+        {
+          "id": "b01d5f41-5795-4158-a03c-10579daea83a",
+          "text": "漫长平淡的日子会稀释所有浓烈情绪，欢喜悲伤最终都归于平淡。",
+          "original": "Les longues journées banales diluent toutes les émotions fortes, joies et peines finissent toutes dans la platitude.",
+          "originalLabel": "法语",
+          "source": "《人都是要死的》旁注"
+        },
+        {
+          "id": "73ff9d6c-963d-4bfc-811f-9aa19610b183",
+          "text": "世间没有永远热烈的人，倦怠与沉默才是长久的常态。",
+          "original": "Il n'existe pas d'homme éternellement passionné, la fatigue et le silence sont la règle durable.",
+          "originalLabel": "法语",
+          "source": "《加缪手记》"
+        },
+        {
+          "id": "a627025d-db19-42fb-bb51-a8790740ad0f",
+          "text": "当生活只剩机械循环，人便会不断追问活着究竟有什么意义。",
+          "original": "Quand la vie n'est plus qu'un cycle mécanique, l'homme se demande sans cesse quel est le sens de vivre.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "5da75f49-25c9-409e-8b83-a3ff1ea33fc0",
+          "text": "职场里再多人相伴，内心的孤独与疲惫依旧独自承担，无人分担。",
+          "original": "Même entouré de collègues au travail, la solitude et la fatigue intérieures restent un fardeau solitaire.",
+          "originalLabel": "法语",
+          "source": "生活随笔"
+        },
+        {
+          "id": "ff03cd20-301c-4e47-964f-c69a1a4356f3",
+          "text": "不必为自己的倦怠感到愧疚，持续劳作本就会耗尽人全部心神。",
+          "original": "Il ne faut pas culpabiliser pour sa fatigue, le travail continu épuise naturellement tout l'esprit.",
+          "originalLabel": "法语",
+          "source": "手记片段"
+        },
+        {
+          "id": "9a5b5f1f-3369-4ed7-b634-61368489e943",
+          "text": "每日推开门奔赴重复的生活，这件事本身就充满无尽荒诞。",
+          "original": "Ouvrir la porte chaque matin pour une vie répétée est en soi profondément absurde.",
+          "originalLabel": "法语",
+          "source": "哲学短评"
+        },
+        {
+          "id": "f9d3f87c-94fb-4bad-8d8f-852ce839151e",
+          "text": "短暂的周末只是短暂逃离，工作日一到，所有压抑疲惫全部回归。",
+          "original": "Le week-end court n'est qu'une fuite temporaire, dès la semaine revient toute l'oppression et la fatigue.",
+          "originalLabel": "法语",
+          "source": "私人书信"
+        },
+        {
+          "id": "1a8c785c-a44d-4520-9e84-f31f4e6dd479",
+          "text": "生存从来不是一场享受，而是日复一日不断忍耐的漫长修行。",
+          "original": "Vivre n'est pas un plaisir, c'est une longue patience jour après jour.",
+          "originalLabel": "法语",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "24007a84-c955-4431-9f57-f2376f0dcfc4",
+          "text": "在隆冬，我终于知道，我身上有一个不可战胜的夏天。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《反抗者》"
+        },
+        {
+          "id": "36f70ac6-a7fb-4411-b02a-d704119c310f",
+          "text": "对未来真正的慷慨，是把一切献给现在。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "66633a4c-c0e1-48c0-a207-d18e55560940",
+          "text": "一切伟大的行动和思想，都有一个微不足道的开始。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "82a566b5-5542-436c-970f-97759cabd7d4",
+          "text": "请别走在我后面，因为我可能不会引路；请别走在我前面，因为我可能不会跟随；请走在我的身边，做我的朋友。",
+          "original": "",
+          "originalLabel": "",
+          "source": "书信集"
+        },
+        {
+          "id": "5ce5b7a0-c54a-4bcc-af43-983daf4c91f1",
+          "text": "我们反抗，所以我们存在。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《反抗者》"
+        },
+        {
+          "id": "93569512-4949-47bb-bbe3-54bba1767a40",
+          "text": "如果你一直在寻找人生的意义，你永远不会真正生活。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "e835b9c5-b234-49d9-8fb6-c14fe46b451d",
+          "text": "我的灵魂与我之间距离如此遥远，而我的存在却如此真实。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《局外人》"
+        },
+        {
+          "id": "e491b13c-6dfe-49b8-a7fe-1da1960414d9",
+          "text": "重要的不是治愈，而是带着病痛活下去。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "2ebf8db9-3826-4ba5-8842-c5bfaaec3282",
+          "text": "攀登顶峰，这种奋斗的本身就足以充实人的心，人们必须相信，垒山不止就是幸福。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "ff00d3e7-e7ff-4722-ac07-7ea7a283483c",
+          "text": "这个世界不可理喻，爱它却是我的宿命。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "1ed9aa77-d18f-4213-a49d-08993937118b",
+          "text": "活着，就是让荒诞活着，让荒诞活着，首先就是正视它。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "4f2a84fa-8479-4aba-8ae6-3bb9d9d7d334",
+          "text": "荒谬当道，爱拯救之。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《手记》"
+        },
+        {
+          "id": "d82b4f72-f96b-4ded-98bf-06d6e0623ba6",
+          "text": "习惯于绝望，比绝望本身还要糟糕。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《局外人》"
+        },
+        {
+          "id": "9bdc63af-7431-48e9-8095-b798addcf5d6",
+          "text": "人生在世，永远也不该演戏作假。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《局外人》"
+        },
+        {
+          "id": "d7f27125-a9b7-4b55-8061-8c7109ea1560",
+          "text": "我可能不确定什么是我真正感兴趣的事情，但我非常确定什么是我不感兴趣的事情。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《局外人》"
+        },
+        {
+          "id": "a996a8ed-cb90-4da0-978d-ec113c0d1c9f",
+          "text": "我知道在这个世界上我无处容身，只是你凭什么审判我的灵魂。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《局外人》"
+        },
+        {
+          "id": "014b3551-80dc-44a9-b62a-f8192f01da80",
+          "text": "没有希望并不等同于绝望，清醒也不导致顺从。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔"
+        },
+        {
+          "id": "c4f6f104-7e1a-40a2-bb9c-421c38966b65",
+          "text": "不要等待他人从头至尾构建你的命运，命运始终掌握在我们自己手中。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《手记》"
+        },
+        {
+          "id": "50707f36-5abf-4d8f-a1c0-0d3c90a5064c",
+          "text": "真正的救赎，并不是厮杀后的胜利，而是能在苦难之中找到生的力量和内心安宁。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《鼠疫》"
+        },
+        {
+          "id": "5d35ceac-f8e4-4664-8a07-b4f8c9f82144",
+          "text": "夜虽然漫长，但绝不会见不到天亮。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《鼠疫》"
+        },
+        {
+          "id": "6bb0f85c-c685-45c4-92ce-450638107e68",
+          "text": "拥抱当下的光明，不寄希望于空渺的乌托邦。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《鼠疫》"
+        },
+        {
+          "id": "e6170bbd-0fc9-4649-aa76-6ede7cb4d697",
+          "text": "这个世界充斥着谎言和奴性，孤独的荒草到处疯长。",
+          "original": "",
+          "originalLabel": "",
+          "source": "作家随笔"
+        },
+        {
+          "id": "55b816c1-7d5a-48aa-a629-27f651c3e210",
+          "text": "矛盾就在此，人拒绝现实世界，却又不愿意脱离它。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "d63e14c3-f415-48ca-a9f7-bec7912a9357",
+          "text": "死亡是我们无法摆脱的，每个人都有自己的死，归根到底，太阳还是温暖着我们的身骨。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《局外人》"
+        },
+        {
+          "id": "662e76cc-f2e9-41ae-b129-9a2201e71c13",
+          "text": "唯有在清醒地认清虚无之后，依然热爱生活，才是真正的英雄主义。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "10a0b181-d825-4b84-954b-dda9433c6204",
+          "text": "自杀，是承认生活超越了我们，或是我们从未读懂生活。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《西西弗神话》"
+        },
+        {
+          "id": "3e9b988f-3ff2-4a47-9cb1-da3d98727266",
+          "text": "阳光之下，世界永远是我们最初与最终的热爱。",
+          "original": "",
+          "originalLabel": "",
+          "source": "散文集"
+        },
+        {
+          "id": "125c2fd6-e03d-4262-a6ef-4f3754d86f76",
+          "text": "生活，就是无数次选择的叠加。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔"
+        },
+        {
+          "id": "c662483d-2db5-4d5f-a403-8d2e42c607c3",
+          "text": "无以复加的痛苦、刻骨的悔恨，终会被时间冲淡，再深刻的爱恋也不例外。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《手记》"
+        },
+        {
+          "id": "c0f19c9a-626c-4e88-ab20-08bf6db790a9",
+          "text": "人要幸福一定要有钱，这是最简单的真相。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人手记"
+        }
+      ]
+    },
+    {
+      "id": "william-somerset-maugham",
+      "nameCn": "威廉·萨默塞特·毛姆",
+      "nameEn": "William Somerset Maugham",
+      "ip": "英国",
+      "lifespan": "1874.1.25 ~ 1965.12.16（91岁）水瓶座",
+      "profession": "小说家、剧作家、旅行作家",
+      "bio": "看透世俗奔波，偏爱游手好闲",
+      "tags": [
+        "人间清醒",
+        "躺平",
+        "闲散",
+        "世俗观察"
+      ],
+      "quotes": [
+        {
+          "id": "fcc35cd7-62a4-468d-b10b-8cdf6e09fb67",
+          "text": "你想干什么？我想游手好闲。",
+          "original": "What do you want to do? I want to idle away my time.",
+          "originalLabel": "英语",
+          "source": "人物对话随笔"
+        },
+        {
+          "id": "99cb8d59-713a-41c3-95f6-f0301c7802ea",
+          "text": "世人追逐功名利禄，我只求终日闲散无事。",
+          "original": "",
+          "originalLabel": "",
+          "source": "散文随笔"
+        },
+        {
+          "id": "7e87dfc8-f250-4533-bb84-9f39245ba2a4",
+          "text": "辛苦谋生消磨灵气，闲散度日方能看见生活本质。",
+          "original": "",
+          "originalLabel": "",
+          "source": "创作手记"
+        },
+        {
+          "id": "c2e52c67-76b7-45be-9aab-037142797988",
+          "text": "不必强迫自己奔波忙碌，虚度光阴也是一种自由。",
+          "original": "",
+          "originalLabel": "",
+          "source": "书信集"
+        },
+        {
+          "id": "975ed725-9fa0-4126-a1ae-4849e89914a9",
+          "text": "多数人为生计耗尽一生，从未有一日随心度日。",
+          "original": "",
+          "originalLabel": "",
+          "source": "社会观察短文"
+        }
+      ]
+    },
+    {
+      "id": "raymond-carver",
+      "nameCn": "雷蒙德·卡佛",
+      "nameEn": "Raymond Carver",
+      "ip": "美国",
+      "lifespan": "1938.5.25 ~ 1988.8.2（50岁）双子座",
+      "profession": "短篇小说家、底层写作者",
+      "bio": "底层打工人代言人，只想得过且过",
+      "tags": [
+        "底层",
+        "打工疲惫",
+        "极简文字",
+        "麻木日常"
+      ],
+      "quotes": [
+        {
+          "id": "7054e5f6-4095-4690-ac38-a5369041b606",
+          "text": "我从没喜欢过工作，我的目标永远是得过且过。",
+          "original": "I never liked work. My goal was always to be shiftless.",
+          "originalLabel": "英语",
+          "source": "《得过且过》"
+        },
+        {
+          "id": "c393c2b6-a2b3-4119-ba6a-c7f85d42e047",
+          "text": "很多日子我只是躺在床上，什么都不盼，什么都不做。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短篇生活随笔"
+        },
+        {
+          "id": "a3545b53-e490-4f76-8e33-de1793a1ebb2",
+          "text": "工作榨干所有情绪，下班之后只剩麻木空洞。",
+          "original": "",
+          "originalLabel": "",
+          "source": "底层生活手记"
+        },
+        {
+          "id": "1872074f-cb6d-4201-8688-ea7303560716",
+          "text": "能偷懒就绝不主动忙碌，安稳躺平便是最大奢望。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人短诗"
+        },
+        {
+          "id": "ccd04b91-eae1-45a3-8453-b3f0d3f95e41",
+          "text": "日复一日重复枯燥工作，看不到任何生活盼头。",
+          "original": "",
+          "originalLabel": "",
+          "source": "打工随笔"
+        }
+      ]
+    },
+    {
+      "id": "shu-qingchun",
+      "nameCn": "老舍",
+      "nameEn": "Shu Qingchun",
+      "ip": "中国",
+      "lifespan": "1899.2.3 ~ 1966.8.24（67岁）水瓶座",
+      "profession": "小说家、剧作家，人民艺术家",
+      "bio": "被迫应付琐事，厌倦身不由己",
+      "tags": [
+        "市井",
+        "谋生煎熬",
+        "中式压抑",
+        "普通人苦楚"
+      ],
+      "quotes": [
+        {
+          "id": "dc2b8818-884b-47b8-8203-2e02d5681613",
+          "text": "我现在就是这样，一天到晚在那儿作事，全是我不爱作的。",
+          "original": "",
+          "originalLabel": "",
+          "source": "战时书信"
+        },
+        {
+          "id": "0c548e64-0179-4b92-a758-47612d8a485d",
+          "text": "整日应付琐事杂务，心中烦闷无处排解。",
+          "original": "",
+          "originalLabel": "",
+          "source": "日常日记"
+        },
+        {
+          "id": "119319da-1252-425a-9d75-32519f3999b0",
+          "text": "一心盼着清闲无事，却永远被繁杂工作缠身。",
+          "original": "",
+          "originalLabel": "",
+          "source": "生活感慨散文"
+        },
+        {
+          "id": "271d4a97-c46b-492c-8919-47a48bbaac79",
+          "text": "谋生劳作磨去所有兴致，只剩日复一日的煎熬。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔短文"
+        },
+        {
+          "id": "fe84a7e3-5807-40f6-86c1-4bd618194fa2",
+          "text": "多想抛开所有事务，闭门静养不问世事。",
+          "original": "",
+          "originalLabel": "",
+          "source": "致友人信件"
+        }
+      ]
+    },
+    {
+      "id": "ottessa-moshfegh",
+      "nameCn": "奥特莎·莫什费格",
+      "nameEn": "Ottessa Moshfegh",
+      "ip": "美国",
+      "lifespan": "1981.5.20 至今（双子座）",
+      "profession": "当代小说家",
+      "bio": "书写精神麻木，与世隔绝式放空",
+      "tags": [
+        "当代丧",
+        "情感麻木",
+        "躺平",
+        "精神倦怠"
+      ],
+      "quotes": [
+        {
+          "id": "377de762-7a02-4ce5-8d58-15613efcd30f",
+          "text": "我不特别想哭，也不特别想笑，对周围的事物不再有感觉。",
+          "original": "I don't feel like crying, I don't feel like laughing, I feel nothing for everything around me.",
+          "originalLabel": "英语",
+          "source": "《我的安息年》"
+        },
+        {
+          "id": "f3f2752f-3cbf-4897-8f9c-607cf5256400",
+          "text": "整日昏睡放空，隔绝外界一切情绪起伏。",
+          "original": "",
+          "originalLabel": "",
+          "source": "小说原文段落"
+        },
+        {
+          "id": "7c910f35-7450-4447-90c4-6b6decedcf9e",
+          "text": "对工作、社交、娱乐全部丧失欲望，只想独自静止度日。",
+          "original": "",
+          "originalLabel": "",
+          "source": "人物心理描写"
+        },
+        {
+          "id": "6a6af6cb-6123-426f-b624-3c7b38179f46",
+          "text": "麻木是保护自己唯一的方式，不必再感知世间苦楚。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《我的安息年》"
+        }
+      ]
+    },
+    {
+      "id": "abraham-yehoshua",
+      "nameCn": "亚伯拉罕·耶霍舒亚",
+      "nameEn": "Abraham Yehoshua",
+      "ip": "以色列",
+      "lifespan": "1936.12.19 ~ 2022.6.14（85岁）射手座",
+      "profession": "希伯来语小说家",
+      "bio": "人生终极追求：吃饭睡觉循环度日",
+      "tags": [
+        "极简生存",
+        "厌劳作",
+        "松弛躺平"
+      ],
+      "quotes": [
+        {
+          "id": "743c840b-ce12-4d86-a336-4dd3282e45aa",
+          "text": "我工作是为了睡觉，我睡了吃，然后再睡，这才是真正的生活。",
+          "original": "אני עובד רק כדי לישון, אוכל אחרי השינה ושוב לישון, זו החיים האמיתיים.",
+          "originalLabel": "希伯来语",
+          "source": "小说人物独白"
+        },
+        {
+          "id": "9f382efe-f8ea-4fcb-ad20-c621e73d8686",
+          "text": "人生最高追求，便是吃饱睡足，不必操劳奔波。",
+          "original": "",
+          "originalLabel": "",
+          "source": "生活观念随笔"
+        },
+        {
+          "id": "58b18d19-a984-4d8e-85ba-8594e1248ef8",
+          "text": "所有劳作最终只为换取安稳睡眠。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短篇小说片段"
+        }
+      ]
+    },
+    {
+      "id": "mu-xin",
+      "nameCn": "木心",
+      "nameEn": "Mu Xin",
+      "ip": "中国",
+      "lifespan": "1927.2.24 ~ 2011.12.21（84岁）双鱼座",
+      "profession": "作家、画家、诗人",
+      "bio": "理想人生：不工作、无人管束、独处",
+      "tags": [
+        "独处",
+        "厌社交",
+        "避世",
+        "文艺松弛"
+      ],
+      "quotes": [
+        {
+          "id": "517c5569-8cc6-4ee7-b4cc-4e5471dbc8e3",
+          "text": "我的修身原则：一，不工作；二，没人管；三，一个人。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《文学回忆录》手记"
+        },
+        {
+          "id": "3e742753-8e0e-45c2-abab-51f35594ee2a",
+          "text": "凡是需要合群的场合，我都感到疲惫不堪。",
+          "original": "",
+          "originalLabel": "",
+          "source": "社交随笔"
+        },
+        {
+          "id": "b9a86282-d36e-4a32-8f6c-681a02347349",
+          "text": "人群消耗心神，独处静养才是治愈良方。",
+          "original": "",
+          "originalLabel": "",
+          "source": "散文片段"
+        },
+        {
+          "id": "82565332-5d78-4955-961d-109c5bd27add",
+          "text": "世间最好的状态，无人管束，无事缠身，独自度日。",
+          "original": "",
+          "originalLabel": "",
+          "source": "晚年随笔"
+        },
+        {
+          "id": "25329a5a-e7b8-4bf0-bb2f-b82d1f3f7149",
+          "text": "被迫应酬劳作，是人生最大折磨。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短评手稿"
+        }
+      ]
+    },
+    {
+      "id": "emil-michel-cioran",
+      "nameCn": "E.M.齐奥朗",
+      "nameEn": "Emil Michel Cioran",
+      "ip": "罗马尼亚（法国）",
+      "lifespan": "1911.4.8 ~ 1995.6.20（84岁）白羊座",
+      "profession": "悲观主义哲学家、散文家",
+      "bio": "清醒看透虚无，自认无用废人",
+      "tags": [
+        "极致悲观",
+        "虚无",
+        "精神清醒",
+        "厌世"
+      ],
+      "quotes": [
+        {
+          "id": "7fe4bcf5-63d5-4734-92f3-886c3e72ad64",
+          "text": "我既没有愁苦到足以成为诗人，又没有冷漠到像个哲学家。但我清醒到足以成为一个废人。",
+          "original": "Nu sunt destul de trist pentru a fi poet, nici destul de rece pentru a fi filosof. Dar sunt suficient de lucid pentru a fi un om inutil.",
+          "originalLabel": "罗马尼亚语",
+          "source": "《解体概要》"
+        },
+        {
+          "id": "53d720c4-2c86-43ea-b01b-a558450e33b4",
+          "text": "清醒地熬过每一天，明明活着，却像持续处在精神停滞里。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《解体概要》"
+        },
+        {
+          "id": "97448dcb-d151-4e27-b31d-8a4b35fffb41",
+          "text": "看透世间劳碌虚无，却依旧被迫裹挟其中。",
+          "original": "",
+          "originalLabel": "",
+          "source": "哲学随笔"
+        },
+        {
+          "id": "9b6e4d83-7f2f-4ac9-89a3-95b9cce253cd",
+          "text": "勤勉之人皆被虚妄裹挟，唯有闲散者看清真相。",
+          "original": "",
+          "originalLabel": "",
+          "source": "箴言短文"
+        }
+      ]
+    },
+    {
+      "id": "charles-bukowski",
+      "nameCn": "查尔斯·布考斯基",
+      "nameEn": "Charles Bukowski",
+      "ip": "美国",
+      "lifespan": "1920.8.16 ~ 1994.3.9（74岁）狮子座",
+      "profession": "诗人、底层小说家、流水线工人",
+      "bio": "戳破打工骗局，看透职场牢笼本质",
+      "tags": [
+        "底层",
+        "反资本",
+        "打工痛苦",
+        "粗粝写实"
+      ],
+      "quotes": [
+        {
+          "id": "4c50c57a-05af-412a-8bd1-a07eb25b9e29",
+          "text": "上班明明是为别人赚大钱，可最后竟还要反过来谢他给你一个工作机会，一个人怎么可能享受这种鸟日子呢？",
+          "original": "",
+          "originalLabel": "",
+          "source": "《样样干》"
+        },
+        {
+          "id": "11d1dbf1-2746-4db0-9e29-21b7193e42e0",
+          "text": "大多数人的一生，就是勉强撑着，熬到下班，熬到周末，熬到年老。",
+          "original": "Most people just hold on, wait for quitting time, wait for the weekend, wait to get old.",
+          "originalLabel": "英语",
+          "source": "底层生活散文"
+        },
+        {
+          "id": "91d58524-9552-4682-98a4-d10955e6cd9a",
+          "text": "工厂办公室皆是牢笼，困住普通人一生光阴。",
+          "original": "",
+          "originalLabel": "",
+          "source": "打工手记"
+        },
+        {
+          "id": "4c55a6b2-f65e-4f2d-aa02-2ba4dd7d820a",
+          "text": "所谓谋生，不过是日复一日忍受无意义折磨。",
+          "original": "",
+          "originalLabel": "",
+          "source": "诗歌片段"
+        },
+        {
+          "id": "6da93889-0d75-4f24-aaaa-6ab8fa7583a1",
+          "text": "一辈子为他人劳作，到最后一无所有。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短篇随笔"
+        }
+      ]
+    },
+    {
+      "id": "daniil-kharms",
+      "nameCn": "丹尼尔·哈尔姆斯",
+      "nameEn": "Daniil Kharms",
+      "ip": "俄罗斯",
+      "lifespan": "1905.12.30 ~ 1942.8.2（36岁）摩羯座",
+      "profession": "先锋荒诞作家、诗人",
+      "bio": "偏爱一事无成，拒绝世俗忙碌标准",
+      "tags": [
+        "先锋荒诞",
+        "摆烂",
+        "游离世俗",
+        "闲散度日"
+      ],
+      "quotes": [
+        {
+          "id": "b6f7f099-6cd5-4502-ad30-abfd5a4d511d",
+          "text": "我过着一种不正确的生活，我什么也不做，并且睡得很晚。",
+          "original": "Я веду неправильную жизнь. Я ничего не делаю и ложусь поздно.",
+          "originalLabel": "俄语",
+          "source": "1932年11月22日日记"
+        },
+        {
+          "id": "b0e0da57-904c-4568-ad6a-260768ce9a64",
+          "text": "整日发呆，无一事可做，无一人想见，时光缓慢消耗我。",
+          "original": "",
+          "originalLabel": "",
+          "source": "1933年日常日记"
+        },
+        {
+          "id": "58db080d-7696-469a-9dc9-48a145d21057",
+          "text": "晚睡晚起，避开所有繁杂琐事，独享安静时光。",
+          "original": "",
+          "originalLabel": "",
+          "source": "生活随笔"
+        },
+        {
+          "id": "7ce906e6-44cc-49b7-b1aa-f9a2da4fd2f3",
+          "text": "世俗追求忙碌充实，我偏爱一事无成的松弛。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人手记"
+        },
+        {
+          "id": "c15342af-9c39-4812-8ac3-f97aa77e372d",
+          "text": "拒绝所有外界事务，只愿独自虚度日夜。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短篇日记"
+        }
+      ]
+    },
+    {
+      "id": "françoise-sagan",
+      "nameCn": "弗朗索瓦丝·萨冈",
+      "nameEn": "Françoise Sagan",
+      "ip": "法国",
+      "lifespan": "1935.6.21 ~ 2004.9.24（69岁）双子座",
+      "profession": "青春小说家",
+      "bio": "理想是放任慵懒，拒绝奋斗自律",
+      "tags": [
+        "自由散漫",
+        "反内卷",
+        "青春颓丧",
+        "随心所欲"
+      ],
+      "quotes": [
+        {
+          "id": "c384abf4-4a42-496b-9faf-07d40abecb97",
+          "text": "我考虑着，要过一种卑鄙无耻的生活，这是我的理想。",
+          "original": "Je rêve d'une vie sans scrupules, c'est mon idéal.",
+          "originalLabel": "法语",
+          "source": "《你好，忧愁》"
+        },
+        {
+          "id": "5b92f72b-cbc2-4774-b17f-0bf7d6aca943",
+          "text": "不必勤勉上进，随心所欲虚度光阴便是理想人生。",
+          "original": "",
+          "originalLabel": "",
+          "source": "人物内心独白"
+        },
+        {
+          "id": "59b0d82d-4740-4c0f-a921-5f5be986b194",
+          "text": "世俗推崇奋斗劳碌，我只向往慵懒放任。",
+          "original": "",
+          "originalLabel": "",
+          "source": "随笔短文"
+        },
+        {
+          "id": "acbb6ba0-84d5-430c-842d-f7e71d1bf898",
+          "text": "挣脱所有责任束缚，随心所欲自在度日。",
+          "original": "",
+          "originalLabel": "",
+          "source": "书信集"
+        }
+      ]
+    },
+    {
+      "id": "ira-ishida",
+      "nameCn": "石田衣良",
+      "nameEn": "Ira Ishida",
+      "ip": "日本",
+      "lifespan": "1960.3.28 至今（白羊座）",
+      "profession": "都市小说家",
+      "bio": "直言职场痛苦远大于微薄薪水",
+      "tags": [
+        "都市社畜",
+        "职场压抑",
+        "日式疲惫",
+        "现实丧"
+      ],
+      "quotes": [
+        {
+          "id": "fbcc5f34-0aae-4aa7-829f-b3e4deaef384",
+          "text": "工作的乐趣顶多只能将口袋装满，但工作的苦闷却是要卡车才装得下。",
+          "original": "仕事の楽しみはせいぜい財布を満たすだけだが、仕事の苦しみはトラック一杯分ある。",
+          "originalLabel": "日语",
+          "source": "都市小说随笔"
+        },
+        {
+          "id": "013fba49-5cf6-4c8a-9cc9-bc7257f739e7",
+          "text": "微薄薪水抵不上日复一日的精神损耗。",
+          "original": "",
+          "originalLabel": "",
+          "source": "职场短篇"
+        },
+        {
+          "id": "a6c33216-bb28-4c79-8017-d9c63f734d4b",
+          "text": "职场压抑耗尽热情，下班只剩一身疲惫麻木。",
+          "original": "",
+          "originalLabel": "",
+          "source": "都市生活手记"
+        }
+      ]
+    },
+    {
+      "id": "zhu-shenghao",
+      "nameCn": "朱生豪",
+      "nameEn": "Zhu Shenghao",
+      "ip": "中国",
+      "lifespan": "1912.2.2 ~ 1944.12.26（32岁）水瓶座",
+      "profession": "翻译家、莎士比亚译者",
+      "bio": "视工作为囚笼，畏惧周一到来",
+      "tags": [
+        "文人内耗",
+        "职场压抑",
+        "细腻敏感",
+        "情书文学"
+      ],
+      "quotes": [
+        {
+          "id": "c77e139e-ea02-4f0a-80c7-c255f2e33f46",
+          "text": "到星期一灵魂就像是一片白雾；星期二它醒了转来，发现仍旧在囚笼里，便又要苦闷了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "致宋清如情书"
+        },
+        {
+          "id": "5ba40850-870e-4535-9743-0317f497128b",
+          "text": "周末短暂欢愉，一到工作日便重回煎熬。",
+          "original": "",
+          "originalLabel": "",
+          "source": "书信随笔"
+        },
+        {
+          "id": "836c2f92-ebbc-4db0-b0f8-30144fa19672",
+          "text": "工作如同囚笼，困住心神不得自由。",
+          "original": "",
+          "originalLabel": "",
+          "source": "日常家书"
+        }
+      ]
+    },
+    {
+      "id": "ji-xianlin",
+      "nameCn": "季羡林",
+      "nameEn": "Ji Xianlin",
+      "ip": "中国",
+      "lifespan": "1911.8.6 ~ 2009.7.11（98岁）狮子座",
+      "profession": "国学大师、翻译家、学者",
+      "bio": "常年应付学术任务，渴求清闲放空",
+      "tags": [
+        "治学枯燥",
+        "文人疲惫",
+        "学术内卷"
+      ],
+      "quotes": [
+        {
+          "id": "f9a4c5d9-3e64-4250-8f0a-540d89b64c9e",
+          "text": "论文终于抄完了……论文虽然当之有愧，毕业却真的毕业了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "求学日记"
+        },
+        {
+          "id": "61627e1a-dd6c-4727-aa40-2971a5527eb3",
+          "text": "整日埋首书卷劳作，心中只觉枯燥疲惫。",
+          "original": "",
+          "originalLabel": "",
+          "source": "校园手记"
+        },
+        {
+          "id": "11fb397e-ac4e-4954-b3f3-b67675c4dcb8",
+          "text": "被迫应付学术任务，难得半日清闲放空。",
+          "original": "",
+          "originalLabel": "",
+          "source": "晚年回忆随笔"
+        }
+      ]
+    },
+    {
+      "id": "hu-shi",
+      "nameCn": "胡适",
+      "nameEn": "Hu Shi",
+      "ip": "中国",
+      "lifespan": "1891.12.17 ~ 1962.2.24（70岁）射手座",
+      "profession": "文学家、思想家、学者",
+      "bio": "沉迷打牌虚度光阴，厌烦苦读治学",
+      "tags": [
+        "随性摆烂",
+        "留学日常",
+        "反勤勉说教"
+      ],
+      "quotes": [
+        {
+          "id": "c92436e6-c637-45ad-83e9-497b688d1e86",
+          "text": "7月15日：打牌。7月16日：打牌。7月17日：打牌。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《胡适留学日记》"
+        },
+        {
+          "id": "5cec8b11-335f-41eb-a557-a0396f950136",
+          "text": "不愿埋首苦读，终日消遣虚度时光。",
+          "original": "",
+          "originalLabel": "",
+          "source": "留学日记片段"
+        },
+        {
+          "id": "c53d94cb-a391-4b97-bd04-edc95c512e7c",
+          "text": "勤勉治学太过煎熬，闲散度日更为舒心。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人随笔"
+        }
+      ]
+    },
+    {
+      "id": "marcel-proust",
+      "nameCn": "马塞尔·普鲁斯特",
+      "nameEn": "Marcel Proust",
+      "ip": "法国",
+      "lifespan": "1871.7.10 ~ 1922.11.18（51岁）巨蟹座",
+      "profession": "意识流文学宗师",
+      "bio": "放弃世俗工作，只忠于自我思绪",
+      "tags": [
+        "意识流",
+        "独处",
+        "漫长倦怠",
+        "回忆文学"
+      ],
+      "quotes": [
+        {
+          "id": "42da37ae-263b-44e7-9e44-4d145832c8be",
+          "text": "我最终放弃了工作，决定只做自己感兴趣的事。",
+          "original": "",
+          "originalLabel": "",
+          "source": "创作手记"
+        },
+        {
+          "id": "51332bff-e7a4-4d99-96eb-2444bb605ff7",
+          "text": "漫长平淡的日常缓慢消耗所有情绪，最后心中只剩一片空旷。",
+          "original": "Les jours uniformes rongent lentement tout sentiment, jusqu'à ne laisser qu'un vide au fond de soi.",
+          "originalLabel": "法语",
+          "source": "《追忆似水年华》"
+        },
+        {
+          "id": "03440715-9b0c-4420-b06e-43a74b064eb4",
+          "text": "日复一日重复日常，所有欢喜悲伤尽数消散。",
+          "original": "",
+          "originalLabel": "",
+          "source": "长篇小说心理描写"
+        },
+        {
+          "id": "65c3b7af-0e06-4214-9344-f2738ce3fa6d",
+          "text": "世俗劳作打断思绪，独处静养方能感知自我。",
+          "original": "",
+          "originalLabel": "",
+          "source": "创作随笔"
+        }
+      ]
+    },
+    {
+      "id": "fyodor-dostoevsky",
+      "nameCn": "费奥多尔·陀思妥耶夫斯基",
+      "nameEn": "Fyodor Dostoevsky",
+      "ip": "俄罗斯",
+      "lifespan": "1821.11.11 ~ 1881.2.9（59岁）天蝎座",
+      "profession": "心理小说大师",
+      "bio": "劳作耗尽身心，下班如同大病一场",
+      "tags": [
+        "心理痛苦",
+        "底层谋生",
+        "精神煎熬",
+        "人性剖析"
+      ],
+      "quotes": [
+        {
+          "id": "1ac25979-ff63-41cf-b8b0-d15e903f70d9",
+          "text": "许多次我下班回家，竟像大病了一场。",
+          "original": "Много раз я возвращался с работы, чувствуя себя совершенно больным.",
+          "originalLabel": "俄语",
+          "source": "《白痴》创作手记"
+        },
+        {
+          "id": "f9d5a595-3c24-4152-aacb-cbc869ed04a7",
+          "text": "漫长庸常的日子磨掉期待，做什么都提不起兴致。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人书信集"
+        },
+        {
+          "id": "438fc0be-da3f-4ec7-b63c-85580f079eee",
+          "text": "谋生劳作带来身心双重折磨，长久难以恢复。",
+          "original": "",
+          "originalLabel": "",
+          "source": "底层生活随笔"
+        }
+      ]
+    },
+    {
+      "id": "wang-zengqi",
+      "nameCn": "汪曾祺",
+      "nameEn": "Wang Zengqi",
+      "ip": "中国",
+      "lifespan": "1920.3.5 ~ 1997.5.16（77岁）双鱼座",
+      "profession": "散文家、小说家、美食作家",
+      "bio": "无心追逐功名，偏爱吊儿郎当松弛生活",
+      "tags": [
+        "中式松弛",
+        "厌内卷",
+        "随性",
+        "烟火闲适"
+      ],
+      "quotes": [
+        {
+          "id": "ee34635a-a7ae-4ffe-82fa-acd73a13fd4b",
+          "text": "大部分同学是来寻求真理的……我就是冲着吊儿郎当来的。",
+          "original": "",
+          "originalLabel": "",
+          "source": "求学回忆散文"
+        },
+        {
+          "id": "36735879-7ed6-4540-8d70-c61613bda73a",
+          "text": "无心争逐功名，只求自在闲散度日。",
+          "original": "",
+          "originalLabel": "",
+          "source": "生活随笔"
+        },
+        {
+          "id": "64c02ef6-ce54-442a-a827-3937fdb2a1ee",
+          "text": "不愿紧绷度日，随性松弛才是舒服活法。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短篇散文"
+        }
+      ]
+    },
+    {
+      "id": "fumi-yamamoto",
+      "nameCn": "山本文绪",
+      "nameEn": "Fumi Yamamoto",
+      "ip": "日本",
+      "lifespan": "1962.11.4 至今（天蝎座）",
+      "profession": "治愈系小说家",
+      "bio": "只想卧床放空，对一切失去行动力",
+      "tags": [
+        "日式丧",
+        "低欲望",
+        "卧床躺平",
+        "女性情绪"
+      ],
+      "quotes": [
+        {
+          "id": "729496e5-0b17-4762-9014-4cbb9e3ea8ff",
+          "text": "什么都不想做，就在床上懒着。",
+          "original": "何もしたくない、ただベッドでごろごろしていたい。",
+          "originalLabel": "日语",
+          "source": "《蓝，另一种蓝》"
+        },
+        {
+          "id": "7fe69264-57d0-4bbb-8fa0-c766adbbbb62",
+          "text": "避开所有事务，卧床放空隔绝一切烦恼。",
+          "original": "",
+          "originalLabel": "",
+          "source": "女性心理小说片段"
+        },
+        {
+          "id": "2d82180f-273f-4c89-9c36-485a4f34c0ac",
+          "text": "没有动力奔赴任何事，静止躺卧是唯一慰藉。",
+          "original": "",
+          "originalLabel": "",
+          "source": "人物独白"
+        }
+      ]
+    },
+    {
+      "id": "alexander-pushkin",
+      "nameCn": "亚历山大·普希金",
+      "nameEn": "Alexander Pushkin",
+      "ip": "俄罗斯",
+      "lifespan": "1799.6.6 ~ 1837.2.10（37岁）双子座",
+      "profession": "俄国诗歌奠基人、诗人",
+      "bio": "看淡虚名劳碌，以沉睡闲散度日",
+      "tags": [
+        "诗歌",
+        "淡泊名利",
+        "厌奔波",
+        "慵懒松弛"
+      ],
+      "quotes": [
+        {
+          "id": "c9ebe283-188c-4a88-bf35-38e72d50be56",
+          "text": "我读书很少，睡觉很多，浮云般的虚名我不去捕捉。",
+          "original": "Мало читаю, много сплю, не гонюсь за пустой славой.",
+          "originalLabel": "俄语",
+          "source": "抒情诗手记"
+        },
+        {
+          "id": "fbe13bff-dbaf-4096-a20d-5950fa30f5c2",
+          "text": "看淡功名劳碌，偏爱沉睡闲散的平淡日子。",
+          "original": "",
+          "originalLabel": "",
+          "source": "诗歌随笔"
+        },
+        {
+          "id": "6e4c284f-fe96-4f72-8ff4-33feca1a79f2",
+          "text": "世人追逐浮华奔波，我只求安稳酣眠。",
+          "original": "",
+          "originalLabel": "",
+          "source": "私人短诗"
+        }
+      ]
+    },
+    {
+      "id": "orhan-pamuk",
+      "nameCn": "奥尔罕·帕慕克",
+      "nameEn": "Orhan Pamuk",
+      "ip": "土耳其",
+      "lifespan": "1952.6.7 至今（双子座）",
+      "profession": "诺贝尔文学奖小说家",
+      "bio": "书写孩童式厌学、孤独疲惫的日常",
+      "tags": [
+        "童年孤独",
+        "厌学",
+        "异域文学",
+        "敏感内向"
+      ],
+      "quotes": [
+        {
+          "id": "f8e0c4a7-e738-4d84-9642-dbbda0bdfeef",
+          "text": "我不想去上学了，因为太困、太冷了。学校里也没有人喜欢我。",
+          "original": "Okula gitmek istemiyorum, çok uykulu ve çok soğuk. Okulda kimse beni sevmiyor.",
+          "originalLabel": "土耳其语",
+          "source": "童年自传小说"
+        },
+        {
+          "id": "a9518019-82a2-4bc0-b3a9-a074fa53659d",
+          "text": "集体学习拘束压抑，只想躲在家中安稳休息。",
+          "original": "",
+          "originalLabel": "",
+          "source": "自传体小说片段"
+        }
+      ]
+    },
+    {
+      "id": "yu-hua",
+      "nameCn": "余华",
+      "nameEn": "Yu Hua",
+      "ip": "中国",
+      "lifespan": "1960.4.3 至今（白羊座）",
+      "profession": "先锋小说家",
+      "bio": "当代社畜嘴替，靠“精神离职”对抗枯燥打工",
+      "tags": [
+        "反内卷",
+        "厌上班",
+        "荒诞苦难",
+        "松弛摆烂",
+        "打工人写实"
+      ],
+      "quotes": [
+        {
+          "id": "f5c48f8f-be6d-4911-9ffc-d69abe7e5c89",
+          "text": "我走上文学道路全部原因，就是不愿意做牙医，想睡懒觉，不想上班，写小说稿费还归自己。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《一直游到海水变蓝》访谈实录"
+        },
+        {
+          "id": "47971e95-a0b4-4a7c-b2cd-f2e5e5caff5b",
+          "text": "第一天去文化馆上班，我故意迟到两个小时，一看大家都不在，我就知道这个单位来对了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "线下文学分享会口述实录"
+        },
+        {
+          "id": "b9503c35-c3af-4776-bb16-21c0f7af8926",
+          "text": "人们奋斗的目标是什么，就是为了躺平。我当年努力写小说，就是想过上一种不被闹钟吵醒的生活。",
+          "original": "",
+          "originalLabel": "",
+          "source": "媒体专访访谈"
+        },
+        {
+          "id": "d2d88960-51f4-4709-bfbf-f5e28f99c078",
+          "text": "如果不喜欢当前工作又需要糊口，就学会精神离职：不投入情绪、不过度努力、不期待认可，工资只买你的时间，不买你的心情。",
+          "original": "",
+          "originalLabel": "",
+          "source": "与董宇辉直播间对谈实录"
+        },
+        {
+          "id": "17eed9d3-30da-4ee9-91fd-658e6a834341",
+          "text": "摸鱼是行为上的懈怠，容易被活捉；精神离职是心理上的战略性撤退，谁也管不了脑子里想什么。",
+          "original": "",
+          "originalLabel": "",
+          "source": "与辉同行直播间访谈"
+        },
+        {
+          "id": "5ab3e706-b547-49de-aec0-547e22a6a48e",
+          "text": "有些领导吃饱没事干，成天盯着办公室摄像头，恨不得员工二十四小时钉在工位上。",
+          "original": "",
+          "originalLabel": "",
+          "source": "董宇辉直播访谈"
+        },
+        {
+          "id": "c7dbeafa-8cdf-432a-8257-fe7161cfe00d",
+          "text": "没有微信的时候一天只工作三四个小时，有了微信，二十四小时都在上班，人根本没有边界。",
+          "original": "",
+          "originalLabel": "",
+          "source": "线下读者分享会"
+        },
+        {
+          "id": "cdc0e843-8157-48af-8814-ab9c7e416324",
+          "text": "好好工作的前提是吃好和睡饱，现在吃饱不难，能踏踏实实睡一觉才是奢侈事。",
+          "original": "",
+          "originalLabel": "",
+          "source": "年度作家专访"
+        },
+        {
+          "id": "72de7a9a-2cdf-4794-abf9-8156123b3c09",
+          "text": "现在再有人跟你说拼命努力、上进就有好回报，那是鸡汤，早就不是现实了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "文学访谈纪录片"
+        },
+        {
+          "id": "04e375f6-c018-40c8-a409-0cad975b4325",
+          "text": "摆烂一会儿并不可耻，所有人都被现实推着往前赶，允许自己倦怠放空，不是罪过。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《我们今天的现实就是超现实》"
+        },
+        {
+          "id": "780ed3d9-87c0-4028-a8f8-ab2cd9e5ed4c",
+          "text": "精神内耗说白了就是心里戏太多，事还没做，千百种煎熬已经在脑子里演完一遍。",
+          "original": "",
+          "originalLabel": "",
+          "source": "与罗翔对谈实录"
+        },
+        {
+          "id": "71c13c80-9e9b-4918-b8d2-a443463086c8",
+          "text": "做人还是平常点好，争来争去赔了自己的命。像我这样越混越没出息，反倒活得长久。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "9f0ee0ff-66d8-4c42-9532-c98148658f89",
+          "text": "人是为了活着本身而活着，而不是为了活着之外任何事物活着。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "f3ebf651-16d6-4428-9563-bac2f4b46841",
+          "text": "人只要活得高兴，穷一点也没关系，不必一辈子被钱财劳碌捆绑。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "4236f490-ba23-457d-85cd-0e81094b6b81",
+          "text": "人要是累得整天没力气，就不会胡思乱想，反倒少很多内耗折磨。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "59fa7b6d-b370-4f74-8d26-6cbaf4065d56",
+          "text": "最初我们来到这个世界，是因为不得不来；最终离开，是因为不得不走，全程身不由己。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "b077a2e7-0d22-4d16-a30b-fb70a62cae38",
+          "text": "生活的荒诞就在于，年轻时拼命奋斗只为躺平，等到终于能躺平，又不得不继续操劳谋生。",
+          "original": "",
+          "originalLabel": "",
+          "source": "线下访谈"
+        },
+        {
+          "id": "b8310c66-851f-4798-9cd1-d3563a77c3e9",
+          "text": "当年一天拔八小时牙，看着别人张开的嘴巴，我一眼望到头，这辈子就要困在诊室里。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《一直游到海水变蓝》"
+        },
+        {
+          "id": "9d10c001-8adb-43f3-b118-14c608fb869b",
+          "text": "我们今天的现实本身就是超现实，人人嘴上喊躺平，身体却被无休止的工作牢牢困住。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《我们今天的现实就是超现实》"
+        },
+        {
+          "id": "6819f235-3bce-48c8-a4ad-9e7325805ebe",
+          "text": "上班只是谋生手段，生活才是目的，别把一份工作当成人生全部寄托。",
+          "original": "",
+          "originalLabel": "",
+          "source": "青年职场主题访谈"
+        },
+        {
+          "id": "9c278b0d-34d9-4339-bdbe-d36773ba2d23",
+          "text": "上香也是一种上进，不必人人都要日夜奔波、拼命内卷。",
+          "original": "",
+          "originalLabel": "",
+          "source": "线下读者问答环节"
+        },
+        {
+          "id": "df6e8565-84a5-4d30-831a-e4fd3f20dfaa",
+          "text": "苦难密不透风，可人只能安静忍受，连大声宣泄都成了奢侈。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "c989d311-7157-4e43-b4e0-4139de9f0689",
+          "text": "世界上丑恶随处伸手可触，美好永远远在天边，普通人一生都在忍受平庸煎熬。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《活着》"
+        },
+        {
+          "id": "5c299291-dd60-4639-8d27-7c65f99bad23",
+          "text": "如果一份工作能允许你精神离职，千万不要随便放弃，给自己留好生存退路。",
+          "original": "",
+          "originalLabel": "",
+          "source": "董宇辉直播间对话"
+        },
+        {
+          "id": "35dcacfe-7b8d-48c0-a5c7-dc3de9dee641",
+          "text": "人一辈子大多时间都在熬，熬下班、熬周末、熬退休，熬到岁月尽头。",
+          "original": "",
+          "originalLabel": "",
+          "source": "城市生活随笔访谈"
+        },
+        {
+          "id": "2424cb9d-4ee2-4476-b0b6-03a58275700c",
+          "text": "我奋斗半生追求无闹钟的日子，真正拥有之后，依旧逃不开没完没了的劳作。",
+          "original": "",
+          "originalLabel": "",
+          "source": "短视频专访"
+        },
+        {
+          "id": "63e5ce73-7a30-472a-a091-74a423fc1bdc",
+          "text": "老天爷，你下屌吧，操死我吧",
+          "original": "",
+          "originalLabel": "",
+          "source": "《在细雨中呼喊》"
+        }
+      ]
+    },
+    {
+      "id": "한강",
+      "nameCn": "韩江",
+      "nameEn": "한강",
+      "ip": "韩国",
+      "lifespan": "1970.11.27 至今（射手座）",
+      "profession": "小说家、诗人",
+      "bio": "2024年诺贝尔文学奖得主，用诗意散文直面历史创伤与生命脆弱",
+      "tags": [
+        "诗意",
+        "孤独",
+        "疲惫",
+        "身体与疼痛",
+        "不和解的韧性"
+      ],
+      "quotes": [
+        {
+          "id": "731748a8-698a-4093-abdc-046a0cbe6007",
+          "text": "所有人都是这样，一点点被磨损且在不知不觉中变成了光滑的轮子。变得越来越光滑后，有一天早上，刹车突然就失灵了。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《素食者》"
+        },
+        {
+          "id": "89d4ad5f-fdcb-445d-85c6-637965a2c739",
+          "text": "她知道自己在很早以前就已死去，现在不过跟幽灵一样，孤独的人生也不过是一场戏。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《素食者》"
+        },
+        {
+          "id": "967ae9c0-4f2c-43ed-8e4c-dc964c04e8b5",
+          "text": "我现在真想再也不用笑着过日子。我不笑不是生气的意思，你们不要误会。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《素食者》"
+        },
+        {
+          "id": "9c01ec64-aa1a-4c24-8f34-3b540a05a6de",
+          "text": "她只是在拒绝吃肉，但所有人都在说：你现在不吃肉，这世界上的人们就会吃掉你。",
+          "original": "너는 지금 고기를 먹지 않으면, 세상 사람들이 너를 잡아먹을 거야.",
+          "originalLabel": "韩语",
+          "source": "《素食者》"
+        },
+        {
+          "id": "5b313565-6ebd-49b5-8d8b-8d49baa46af1",
+          "text": "当我忘却身为人类的事实，才能挣脱一切。",
+          "original": "내가 인간이라는 사실을 잊었을 때, 비로소 모든 것에서 벗어날 수 있었다.",
+          "originalLabel": "韩语",
+          "source": "《素食者》"
+        },
+        {
+          "id": "d2e996a7-c23f-4fea-8b22-f616feb8fc89",
+          "text": "疯狂是清醒者的罪名。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《素食者》"
+        },
+        {
+          "id": "d1a539c2-ffdc-4907-b622-8c85bf5664d1",
+          "text": "他们说我疯了，只因我拒绝咀嚼世界的规则。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《素食者》"
+        },
+        {
+          "id": "368bd1dc-54e9-4b29-9bfa-b5d6593a495b",
+          "text": "我每天早晨睁开眼睛的时候都有迷路的感觉。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《黑夜的狂欢》"
+        },
+        {
+          "id": "152e8021-70ed-46cd-8c07-9efa0b1917c4",
+          "text": "你在哪里长成了如此穷困的脸，现在又在哪里用这张穷困的脸生活着呢？",
+          "original": "",
+          "originalLabel": "",
+          "source": "《黑夜的狂欢》"
+        },
+        {
+          "id": "2c3e056a-7be2-4ee8-a109-c2ec27a92688",
+          "text": "我还这么……这么年轻啊。在大学附属医院做了胃镜，说没有任何异常，说什么病都没有。这世道还能这样吗？我很疼，是真的很疼！",
+          "original": "",
+          "originalLabel": "",
+          "source": "《黑夜的狂欢》"
+        },
+        {
+          "id": "c1dad837-eacd-4422-9d63-1d2f03925247",
+          "text": "有些记忆不会因为时间而损伤，痛苦也是如此。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《白》"
+        },
+        {
+          "id": "7d4f26fb-b4a6-40d1-8183-908d5ba2cd37",
+          "text": "我们的生命，是一种以虚白且清晰的形态散布于虚空的奇迹。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《白》"
+        },
+        {
+          "id": "ad289be8-dc9c-478f-ba6e-f073d7370a7b",
+          "text": "如果想见那个人，一定要在青春和体魄已逝之时；在渴望的时间所剩无几之时；见面之后，由于风烛残年，只剩下彻底的诀别之时。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《白》"
+        },
+        {
+          "id": "3af82477-978c-4a23-8ca4-37a3623de259",
+          "text": "我不想活得像摔倒一半的人。为了想活下去才离开你，因为想活得像活着一样。",
+          "original": "살기 위해서 너를 떠났어, 살아 있는 것처럼 살고 싶어서.",
+          "originalLabel": "韩语",
+          "source": "《不做告别》"
+        },
+        {
+          "id": "a0174dbe-81d6-4ed6-95c5-5f4a35fcce24",
+          "text": "人的身体就是悲伤，它由凹陷的地方、柔软的地方、容易受伤的地方填满。手臂、腋下、胸部、大腿间，这具身体为了拥抱人、为了被别人拥抱而诞生。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "324f9859-f928-4288-9b2f-0c86b99e7c7f",
+          "text": "我变得如此锋利，难道是为了刺穿什么吗？",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "62aa47a8-45d9-4571-810a-b849bf83ddfc",
+          "text": "我能相信的，只有我的胸部。我喜欢我的乳房，因为它没有任何杀伤力。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "a22f7f1f-888d-4e9c-bd31-ffbe78b86cac",
+          "text": "世上没有什么是永恒的，是吧……如果我们能够认同这个，也许就能活得更轻松一些。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "00bc4c76-a23a-4c64-b9ec-c417e2963e1f",
+          "text": "我们就像植物，被种植在生活的土壤里，无法自由移动，只能等待阳光和雨水的恩赐，或者承受风暴与干旱的折磨。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "900f875d-f75e-4373-9c81-7f187a324c1e",
+          "text": "我们只是活在尊严的错觉里，随时都有可能变成一文不值的东西。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "b9a6c6b5-6050-4b2b-9755-d3c3174dfdfa",
+          "text": "如果说雪是从天而降的沉默，那雨也许就是天上落下的无尽的长句。",
+          "original": "눈이 하늘에서 내리는 침묵이라면, 비는 아마 하늘에서 내리는 끝없는 긴 문장일지도 몰라.",
+          "originalLabel": "韩语",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "efb37d72-f790-45bc-9115-2dcdc71c9660",
+          "text": "在火焰中，有着圆形的寂静。",
+          "original": "불꽃 속에는 둥근 고요가 있다.",
+          "originalLabel": "韩语",
+          "source": "《把晚餐放进抽屉里》"
+        },
+        {
+          "id": "e15e1d22-98d3-472e-9487-c818435a42bc",
+          "text": "有些夜晚是透明的。",
+          "original": "어떤 밤들은 투명하다.",
+          "originalLabel": "韩语",
+          "source": "《把晚餐放进抽屉里》"
+        },
+        {
+          "id": "f2b9d3bf-202e-4b20-8579-d89f620734ed",
+          "text": "可以试着活得随意一些，又不是能活一千年一万年……",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "4c554d0f-c9c4-450a-962f-e15daedff516",
+          "text": "我不想再被定义，我要成为我自己。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "35f12eca-5abc-41cb-a378-9e2e20ccd48c",
+          "text": "冬天我已挺过，春天我满心欢喜。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "cc2d315c-f835-4a2e-874e-2736d7d46d50",
+          "text": "得思念什么才能坚持下去，如果心里没有熊熊燃烧的烈火，如果没有非要回去拥抱的你。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "375b273a-bc9e-4e8d-875a-2cb8766fbccd",
+          "text": "不要失眠，不要做噩梦，不要相信任何人的指责。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "4a9ebd4b-b74e-42c3-ba1a-1b2689a57aa7",
+          "text": "笑到最后，她突然觉得活着是一件很令人诧异的事。人不管经历了什么，哪怕是再惨不忍睹的事，也还是会照样活下去，有时还能畅怀大笑。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "be8a2803-0bb0-4bfc-8637-1f7a497b05d3",
+          "text": "随着岁月流逝，事物都在归位。无法忍受的一切滚过受伤的身体，扎进了它本该在的位置。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "9bb607f4-65c0-4637-bf20-a4813c61bed0",
+          "text": "世上并不存在一成不变的我，正是像流水般不断变化的过程造就了我。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《植物妻子》"
+        },
+        {
+          "id": "9ba0e41f-d88e-4d01-88c0-1115f586bd9e",
+          "text": "发疯是我刺痛世界唯一的手段。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《不做告别》"
+        },
+        {
+          "id": "fb3d5afa-811d-4432-b392-6efcb0143d54",
+          "text": "人即便失去会视为全部的东西，也可以活下去。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《不做告别》"
+        },
+        {
+          "id": "03f52dce-b84e-4c2e-ad06-fd173fefb319",
+          "text": "我不想活得像摔倒一半的人，如同你一样。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《不做告别》"
+        },
+        {
+          "id": "0a04b42d-8be1-4c1a-9849-2d6f9e804dcd",
+          "text": "真正的情感是不需要言语的，一个眼神，一个动作，就足以表达一切。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《不做告别》"
+        },
+        {
+          "id": "61896b66-42d5-4396-a221-b81fe68af189",
+          "text": "有些夜晚是透明的，就像某些凌晨一样。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《不做告别》"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
