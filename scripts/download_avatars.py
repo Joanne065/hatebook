@@ -52,7 +52,6 @@ def main():
         if not url:
             print(f"skip {aid}")
             continue
-        url = url.replace("/320px-", "/220px-")
         ext = ".jpg"
         dest = OUT / f"{re.sub(r'[^a-zA-Z0-9_-]', '_', aid)}{ext}"
         try:

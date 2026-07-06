@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import type { Author, Quote } from '../types';
 import { PaperContent } from './AutoFitQuote';
 import { Avatar } from './Avatar';
-import { IconComment, IconCopy, IconHeart, IconShare, IconStar } from './Icons';
+import { IconComment, IconCopy, IconHeart, IconStar } from './Icons';
 import { formatCopyText, formatSource, getShortAuthorName, ME_AUTHOR_ID } from '../utils/helpers';
 
 interface QuoteCardProps {
@@ -18,7 +18,6 @@ interface QuoteCardProps {
   onFavorite: () => void;
   onCommentClick?: () => void;
   onCopy: () => void;
-  onShare: () => void;
 }
 
 export function QuoteCard({
@@ -34,7 +33,6 @@ export function QuoteCard({
   onFavorite,
   onCommentClick,
   onCopy,
-  onShare,
 }: QuoteCardProps) {
   const isEssay = quote.type === 'essay';
   const authorLink = isEssay ? '/me' : `/author/${author.id}`;
@@ -52,9 +50,6 @@ export function QuoteCard({
           <div className="quote-card-tools">
             <button type="button" className="icon-btn" onClick={onCopy} aria-label="复制">
               <IconCopy />
-            </button>
-            <button type="button" className="icon-btn" onClick={onShare} aria-label="转发">
-              <IconShare />
             </button>
           </div>
         )}
@@ -129,16 +124,6 @@ export async function copyQuote(quote: Quote, author: Author) {
   const text = formatCopyText(quote.text, name);
   await navigator.clipboard.writeText(text);
 }
-
-export function shareQuote(quoteId: string) {
-  const url = `${window.location.origin}${window.location.pathname}#/quote/${quoteId}`;
-  if (navigator.share) {
-    void navigator.share({ url, title: '小恨书' });
-  } else {
-    void navigator.clipboard.writeText(url);
-  }
-}
-
 export function resolveAuthorForQuote(author: Author | undefined, userName: string): Author {
   if (author) return author;
   return { id: ME_AUTHOR_ID, nameCn: userName, nameEn: userName };

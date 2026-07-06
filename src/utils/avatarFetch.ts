@@ -40,9 +40,14 @@ async function fetchFromWiki(title: string): Promise<string | null> {
   return null;
 }
 
-export async function fetchAuthorAvatar(authorId: string, nameCn: string, nameEn: string): Promise<string | null> {
+export async function fetchAuthorAvatar(
+  authorId: string,
+  nameCn: string,
+  nameEn: string,
+  skipCache = false,
+): Promise<string | null> {
   const cache = readCache();
-  if (cache[authorId]) return cache[authorId];
+  if (!skipCache && cache[authorId]) return cache[authorId];
 
   for (const title of wikiTitles(nameEn, nameCn)) {
     const url = await fetchFromWiki(title);

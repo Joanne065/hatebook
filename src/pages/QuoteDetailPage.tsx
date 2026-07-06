@@ -3,9 +3,8 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Avatar } from '../components/Avatar';
 import { CommentSection } from '../components/CommentSection';
 import { IconBack, IconCopy, IconEdit } from '../components/Icons';
-import { QuoteCard, copyQuote, resolveAuthorForQuote, shareQuote } from '../components/QuoteCard';
+import { QuoteCard, copyQuote, resolveAuthorForQuote } from '../components/QuoteCard';
 import { useStore } from '../store/store';
-import { formatDate, formatDateTime } from '../utils/helpers';
 
 export function QuoteDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -75,13 +74,7 @@ export function QuoteDetailPage() {
           onFavorite={() => store.toggleFavorite(quote.id)}
           onCommentClick={() => commentsRef.current?.scrollIntoView({ behavior: 'smooth' })}
           onCopy={() => void copyQuote(quote, author)}
-          onShare={() => shareQuote(quote.id)}
         />
-
-        <div className="detail-meta-row">
-          <span>{formatDate(quote.createdAt)}</span>
-          {quote.location && <span>{formatDateTime(quote.createdAt).split(' ')[1]} {quote.location}</span>}
-        </div>
 
         {quote.supplement && <p className="detail-supplement">{quote.supplement}</p>}
 

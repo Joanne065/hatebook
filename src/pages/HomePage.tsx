@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BottomNav, SearchBar } from '../components/Layout';
-import { QuoteCard, copyQuote, resolveAuthorForQuote, shareQuote } from '../components/QuoteCard';
+import { QuoteCard, copyQuote, resolveAuthorForQuote } from '../components/QuoteCard';
 import { searchQuotes, useStore } from '../store/store';
 import { shuffle } from '../utils/helpers';
 import type { Quote } from '../types';
@@ -43,7 +43,6 @@ export function HomePage() {
               onFavorite={() => store.toggleFavorite(quote.id)}
               onCommentClick={() => navigate(`/quote/${quote.id}#comments`)}
               onCopy={() => void copyQuote(quote, author)}
-              onShare={() => shareQuote(quote.id)}
             />
           );
         })}
