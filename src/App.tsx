@@ -1,4 +1,5 @@
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { ScrollToTop } from './components/ScrollToTop';
 import { StoreProvider } from './store/store';
 import { HomePage } from './pages/HomePage';
 import { QuoteDetailPage } from './pages/QuoteDetailPage';
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <StoreProvider>
       <HashRouter>
+        <ScrollToTop />
         <div className="app-shell">
           <Routes>
             <Route path="/" element={<HomePage />} />

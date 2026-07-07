@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useLayoutEffect, useMemo, useRef } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Avatar } from '../components/Avatar';
 import { CommentSection } from '../components/CommentSection';
@@ -19,14 +19,18 @@ export function QuoteDetailPage() {
   const location = useLocation();
   const store = useStore();
   const commentsRef = useRef<HTMLDivElement>(null);
+  const topRef = useRef<HTMLElement>(null);
   const state = location.state as DetailLocationState | null;
 
   const quote = id ? store.getQuote(id) : undefined;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (window.location.hash === '#comments') {
       commentsRef.current?.scrollIntoView({ behavior: 'smooth' });
+      return;
     }
+    window.scrollTo(0, 0);
+    topRef.current?.scrollIntoView({ block: 'start' });
   }, [id]);
 
   const authorFeed = !!(state?.authorFeed && quote && quote.type === 'excerpt');
@@ -35,7 +39,7 @@ export function QuoteDetailPage() {
     if (!authorFeed || !quote) return [];
     const others = store.excerptQuotes.filter((q) => q.authorId === quote.authorId && q.id !== quote.id);
     return shuffle(others);
-  }, [authorFeed, quote, store.excerptQuotes]);
+  }, [authorFeed, quote?.id, quote?.authorId, store.excerptQuotes]);
 
   if (!quote) {
     return (
@@ -72,7 +76,7 @@ export function QuoteDetailPage() {
     navigate(-1);
   };
 
-  const renderQuoteBlock = (q: typeof quote, opts: { showInput: boolean; anchorComments?: boolean }) => {
+  const renderQuoteBlock = (q: typeof quote, opts: { showInput: boolean; anchorComments?: boolean; isPrimary?: boolean }) => {
     const qAuthor = resolveAuthorForQuote(
       store.getAuthor(q.authorId),
       store.state.userProfile.name,
@@ -81,7 +85,7 @@ export function QuoteDetailPage() {
     const qComments = store.getComments(q.id);
 
     return (
-      <article className="detail-feed-item" key={q.id}>
+      <article className="detail-feed-item" key={q.id} ref={opts.isPrimary ? topRef : undefined}>
         <QuoteCard
           quote={q}
           author={qAuthor}
@@ -134,7 +138,7 @@ export function QuoteDetailPage() {
       </header>
 
       <main className="detail-main">
-        {renderQuoteBlock(quote, { showInput: true, anchorComments: true })}
+        {renderQuoteBlock(quote, { showInput: true, anchorComments: true, isPrimary: true })}
         {authorFeed && moreQuotes.map((q) => renderQuoteBlock(q, { showInput: false }))}
       </main>
     </div>
