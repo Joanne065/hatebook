@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { MasonryFeed } from '../components/MasonryFeed';
 import { BatchSelectWrap } from '../components/BatchSelectWrap';
 import { Avatar } from '../components/Avatar';
 import { GridQuoteCard } from '../components/QuoteCard';
@@ -142,7 +143,7 @@ export function AuthorPage() {
         </div>
       )}
 
-      <div className="masonry-feed">
+      <MasonryFeed>
         {quotes.map((q) => (
           <BatchSelectWrap
             key={q.id}
@@ -170,7 +171,7 @@ export function AuthorPage() {
             </div>
           </BatchSelectWrap>
         ))}
-      </div>
+      </MasonryFeed>
 
       {editOpen && (
         <div className="modal-overlay" onClick={() => setEditOpen(false)}>

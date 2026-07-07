@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { MasonryFeed } from '../components/MasonryFeed';
 import { BatchSelectWrap } from '../components/BatchSelectWrap';
 import { Avatar } from '../components/Avatar';
 import { GridQuoteCard } from '../components/QuoteCard';
@@ -107,7 +108,7 @@ export function MePage() {
         </div>
       )}
 
-      <div className="masonry-feed">
+      <MasonryFeed>
         {quotes.map((q) => {
           const author = q.type === 'essay' ? meAuthor : store.getAuthor(q.authorId)!;
           return (
@@ -138,7 +139,7 @@ export function MePage() {
             </BatchSelectWrap>
           );
         })}
-      </div>
+      </MasonryFeed>
 
       {editOpen && (
         <div className="modal-overlay" onClick={() => setEditOpen(false)}>
