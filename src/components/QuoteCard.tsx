@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Author, Quote } from '../types';
 import { PaperContent } from './AutoFitQuote';
@@ -90,6 +91,34 @@ export function QuoteCard({
   );
 }
 
+function FitAuthorName({ name }: { name: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [display, setDisplay] = useState(name);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const fit = () => {
+      setDisplay(name);
+      requestAnimationFrame(() => {
+        if (!ref.current) return;
+        if (ref.current.scrollWidth <= ref.current.clientWidth + 1) return;
+        const short = getShortAuthorName(name);
+        setDisplay(short !== name ? short : name);
+      });
+    };
+
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(el);
+    if (el.parentElement) ro.observe(el.parentElement);
+    return () => ro.disconnect();
+  }, [name]);
+
+  return <span ref={ref} className="grid-card-author-name">{display}</span>;
+}
+
 export function GridQuoteCard({
   quote,
   author,
@@ -115,7 +144,7 @@ export function GridQuoteCard({
         {showAuthor ? (
           <div className="grid-card-author">
             <Avatar author={author} size={18} />
-            <span className="grid-card-author-name">{author.nameCn || author.nameEn}</span>
+            <FitAuthorName name={author.nameCn || author.nameEn} />
           </div>
         ) : (
           <span className="grid-card-source">{formatSource(quote.source)}</span>

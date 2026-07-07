@@ -1,5 +1,5 @@
 /** Pre-resolved Wikipedia portrait URLs (grayscale applied via CSS) */
-import type { Interaction, Quote } from '../types';
+import type { Author, Interaction, Quote } from '../types';
 
 export const AUTHOR_AVATARS: Record<string, string> = {
   'franz-kafka': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kafka1906_cropped.jpg/320px-Kafka1906_cropped.jpg',
@@ -67,6 +67,25 @@ export function getShortAuthorName(nameCn: string): string {
   const last = parts[parts.length - 1]?.trim();
   if (last && last.length <= 6) return last;
   return nameCn.replace(/^[^\u4e00-\u9fff]*/u, '').slice(-3) || nameCn;
+}
+
+export function searchAuthors(authors: Author[], query: string): Author[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return authors;
+  return authors.filter((author) => {
+    const haystack = [
+      author.nameCn,
+      author.nameEn,
+      author.ip,
+      author.profession,
+      author.bio,
+      ...(author.tags ?? []),
+    ]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase();
+    return haystack.includes(q);
+  });
 }
 
 export function formatCopyText(text: string, authorName: string): string {
