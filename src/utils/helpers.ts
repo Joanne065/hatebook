@@ -51,10 +51,22 @@ export function getInitial(nameCn: string, nameEn: string): string {
     if (letter) return letter.toUpperCase();
   }
 
+  const latin = (nameCn || nameEn).trim();
+  if (/^[A-Za-z]/.test(latin)) {
+    return latin[0].toUpperCase();
+  }
+
   const parts = nameCn.split(/[·・]/);
   const last = parts[parts.length - 1]?.replace(/[^\u4e00-\u9fff]/g, '') ?? '';
   if (last) return last.slice(0, 1);
   return nameCn.replace(/[^\u4e00-\u9fff]/g, '').slice(0, 1) || '?';
+}
+
+/** Avatar placeholder: short latin names like "momo" show in full */
+export function getAvatarFallback(nameCn: string, nameEn: string): string {
+  const name = (nameCn || nameEn).trim();
+  if (/^[A-Za-z]{2,6}$/.test(name)) return name.toLowerCase();
+  return getInitial(nameCn, nameEn);
 }
 
 export function getAvatarUrl(authorId: string, _nameCn: string, _nameEn: string, custom?: string): string | null {

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, type LinkProps } from 'react-router-dom';
 import type { Author, Quote } from '../types';
 import { PaperContent } from './AutoFitQuote';
 import { Avatar } from './Avatar';
@@ -96,15 +96,17 @@ export function GridQuoteCard({
   likes,
   to,
   showAuthor = false,
+  linkState,
 }: {
   quote: Quote;
   author: Author;
   likes: number;
   to: string;
   showAuthor?: boolean;
+  linkState?: LinkProps['state'];
 }) {
   return (
-    <Link to={to} className="grid-card">
+    <Link to={to} className="grid-card" state={linkState}>
       <PaperContent
         text={quote.text}
         original={quote.original}

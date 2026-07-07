@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { BatchSelectWrap } from '../components/BatchSelectWrap';
 import { Avatar } from '../components/Avatar';
 import { GridQuoteCard } from '../components/QuoteCard';
 import { IconBack, IconEdit, IconMenu } from '../components/Icons';
@@ -143,24 +144,31 @@ export function AuthorPage() {
 
       <div className="masonry-feed">
         {quotes.map((q) => (
-          <div
+          <BatchSelectWrap
             key={q.id}
-            className={`masonry-item${batchMode && selected.has(q.id) ? ' selected' : ''}`}
-            onContextMenu={(e) => {
-              e.preventDefault();
-              const action = prompt('输入 e 编辑 / d 删除');
-              if (action === 'd' && confirm('删除？')) store.deleteQuotes([q.id]);
-              if (action === 'e') navigate(`/add?edit=${q.id}`);
-            }}
-            onClick={batchMode ? () => toggleSelect(q.id) : undefined}
+            batchMode={batchMode}
+            selected={selected.has(q.id)}
+            onToggle={() => toggleSelect(q.id)}
           >
-            <GridQuoteCard
-              quote={q}
-              author={author}
-              likes={store.getInteraction(q.id).likes}
-              to={batchMode ? '#' : `/quote/${q.id}`}
-            />
-          </div>
+            <div
+              className="masonry-item"
+              onContextMenu={(e) => {
+                if (batchMode) return;
+                e.preventDefault();
+                const action = prompt('输入 e 编辑 / d 删除');
+                if (action === 'd' && confirm('删除？')) store.deleteQuotes([q.id]);
+                if (action === 'e') navigate(`/add?edit=${q.id}`);
+              }}
+            >
+              <GridQuoteCard
+                quote={q}
+                author={author}
+                likes={store.getInteraction(q.id).likes}
+                to={batchMode ? '#' : `/quote/${q.id}`}
+                linkState={batchMode ? undefined : { authorFeed: true }}
+              />
+            </div>
+          </BatchSelectWrap>
         ))}
       </div>
 

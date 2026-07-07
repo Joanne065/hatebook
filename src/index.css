@@ -425,19 +425,52 @@ a {
   margin: 0;
 }
 
-/* Masonry feed */
+/* Masonry feed — left-to-right row order */
 .masonry-feed {
-  column-count: 2;
-  column-gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
   padding: 6px 8px 16px;
 }
 
-.masonry-item {
-  break-inside: avoid;
-  margin-bottom: 6px;
-  display: block;
+.masonry-item,
+.masonry-item-wrap {
+  min-width: 0;
 }
 
+.masonry-item-wrap.batch-active {
+  position: relative;
+  cursor: pointer;
+}
+
+.batch-active .grid-card {
+  pointer-events: none;
+}
+
+.batch-check {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 3;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--text);
+  border-radius: 50%;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--bg);
+  pointer-events: none;
+}
+
+.batch-check.checked {
+  background: var(--text);
+}
+
+.masonry-item-wrap.is-selected .grid-card-paper,
 .masonry-item.selected .grid-card-paper {
   outline: 2px solid var(--text);
 }
@@ -499,8 +532,9 @@ a {
 
 /* legacy alias */
 .grid-feed {
-  column-count: 2;
-  column-gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
   padding: 6px 8px 16px;
 }
 
@@ -649,6 +683,28 @@ a {
   overflow-x: hidden;
 }
 
+.detail-feed-item {
+  margin-bottom: 20px;
+}
+
+.detail-feed-item .quote-card {
+  margin-bottom: 0;
+}
+
+.detail-feed-comments {
+  margin-top: 8px;
+}
+
+.detail-feed-comments .comments {
+  border-top: none;
+  padding-top: 0;
+}
+
+.detail-feed-comments .comments-title {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
 .detail-meta-row {
   display: flex;
   gap: 12px;
@@ -737,19 +793,30 @@ a {
   color: var(--muted);
 }
 
-.comment-body p {
-  margin: 6px 0;
+.comment-text-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.comment-text-row p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .comment-like {
+  flex-shrink: 0;
   border: none;
   background: none;
   display: inline-flex;
   align-items: center;
   gap: 4px;
   padding: 0;
+  margin-top: 2px;
   cursor: pointer;
   font-size: 12px;
 }

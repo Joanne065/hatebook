@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { BatchSelectWrap } from '../components/BatchSelectWrap';
 import { Avatar } from '../components/Avatar';
 import { GridQuoteCard } from '../components/QuoteCard';
 import { IconEdit, IconMenu } from '../components/Icons';
@@ -34,8 +35,10 @@ export function MePage() {
   const quotes = useMemo(() => {
     let list: Quote[] = [];
     if (tab === 'notes') list = store.essayQuotes;
-    else if (tab === 'liked') list = store.visibleQuotes.filter((q) => store.getInteraction(q.id).likes > 0);
-    else if (tab === 'collected') list = store.visibleQuotes.filter((q) => store.getInteraction(q.id).favorited);
+    else if (tab === 'liked') {
+      list = store.visibleQuotes.filter((q) => store.getInteraction(q.id).likes > 0);
+      list = [...list].sort((a, b) => store.getInteraction(b.id).likes - store.getInteraction(a.id).likes);
+    } else if (tab === 'collected') list = store.visibleQuotes.filter((q) => store.getInteraction(q.id).favorited);
     else list = store.visibleQuotes.filter((q) => store.getComments(q.id).length > 0);
     if (query.trim()) list = searchQuotes(list, store.state.authors, query);
     return list;
@@ -108,25 +111,31 @@ export function MePage() {
         {quotes.map((q) => {
           const author = q.type === 'essay' ? meAuthor : store.getAuthor(q.authorId)!;
           return (
-            <div
+            <BatchSelectWrap
               key={q.id}
-              className={`masonry-item${batchMode && selected.has(q.id) ? ' selected' : ''}`}
-              onContextMenu={(e) => {
-                e.preventDefault();
-                const action = prompt('输入 e 编辑 / d 删除');
-                if (action === 'd') store.deleteQuotes([q.id]);
-                if (action === 'e') navigate(`/add?edit=${q.id}`);
-              }}
-              onClick={batchMode ? () => toggleSelect(q.id) : undefined}
+              batchMode={batchMode}
+              selected={selected.has(q.id)}
+              onToggle={() => toggleSelect(q.id)}
             >
-              <GridQuoteCard
-                quote={q}
-                author={author}
-                likes={store.getInteraction(q.id).likes}
-                to={batchMode ? '#' : `/quote/${q.id}`}
-                showAuthor={tab === 'collected' || tab === 'liked'}
-              />
-            </div>
+              <div
+                className="masonry-item"
+                onContextMenu={(e) => {
+                  if (batchMode) return;
+                  e.preventDefault();
+                  const action = prompt('输入 e 编辑 / d 删除');
+                  if (action === 'd') store.deleteQuotes([q.id]);
+                  if (action === 'e') navigate(`/add?edit=${q.id}`);
+                }}
+              >
+                <GridQuoteCard
+                  quote={q}
+                  author={author}
+                  likes={store.getInteraction(q.id).likes}
+                  to={batchMode ? '#' : `/quote/${q.id}`}
+                  showAuthor={tab === 'collected' || tab === 'liked'}
+                />
+              </div>
+            </BatchSelectWrap>
           );
         })}
       </div>

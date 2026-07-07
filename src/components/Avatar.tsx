@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import avatarManifest from '../data/avatar-manifest.json';
 import type { Author } from '../types';
 import { fetchAuthorAvatar, getCachedAvatar, setCachedAvatar } from '../utils/avatarFetch';
-import { AUTHOR_AVATARS, getInitial, publicAssetUrl } from '../utils/helpers';
+import { AUTHOR_AVATARS, getAvatarFallback, publicAssetUrl } from '../utils/helpers';
 
 const LOCAL_AVATARS: Record<string, string> = avatarManifest as Record<string, string>;
 const HAN_KANG_ID = '한강';
@@ -23,9 +23,10 @@ interface AvatarProps {
 }
 
 export function Avatar({ author, size = 40, to, onClick }: AvatarProps) {
-  const initial = getInitial(author.nameCn, author.nameEn);
   const [url, setUrl] = useState<string | null>(() => resolveStaticUrl(author));
   const [failed, setFailed] = useState(false);
+  const fallback = getAvatarFallback(author.nameCn, author.nameEn);
+  const fallbackSize = fallback.length > 1 ? size * 0.22 : size * 0.38;
 
   useEffect(() => {
     setFailed(false);
@@ -65,7 +66,7 @@ export function Avatar({ author, size = 40, to, onClick }: AvatarProps) {
   };
 
   const content = (
-    <div className="avatar" style={{ width: size, height: size, fontSize: size * 0.38 }} onClick={onClick}>
+    <div className="avatar" style={{ width: size, height: size }} onClick={onClick}>
       {url && !failed ? (
         <img
           src={url}
@@ -77,7 +78,7 @@ export function Avatar({ author, size = 40, to, onClick }: AvatarProps) {
           onError={handleError}
         />
       ) : (
-        <span className="avatar-fallback">{initial}</span>
+        <span className="avatar-fallback" style={{ fontSize: fallbackSize }}>{fallback}</span>
       )}
     </div>
   );

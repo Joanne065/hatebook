@@ -7,8 +7,8 @@ import { ME_AUTHOR_ID, uid, getFollowedAuthorIds } from '../utils/helpers';
 const STORAGE_KEY = 'xiaohhenshu-state-v1';
 
 const defaultUserProfile: UserProfile = {
-  name: '自己的名字',
-  bio: '个性签名',
+  name: 'momo',
+  bio: '这个人很懒，可能还没想好吧！',
   location: '',
 };
 
@@ -62,7 +62,13 @@ function loadState(): AppState {
       ...parsed,
       authors: mergedAuthors,
       quotes: [...parsed.quotes, ...newDefaults],
-      userProfile: { ...defaultUserProfile, ...parsed.userProfile },
+      userProfile: {
+        ...defaultUserProfile,
+        ...parsed.userProfile,
+        ...(parsed.userProfile.name === '自己的名字'
+          ? { name: defaultUserProfile.name, bio: defaultUserProfile.bio }
+          : {}),
+      },
       deletedQuoteIds: parsed.deletedQuoteIds ?? [],
       followedAuthorIds: parsed.followedAuthorIds ?? [],
     };

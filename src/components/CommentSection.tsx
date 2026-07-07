@@ -5,18 +5,19 @@ import { IconHeart } from './Icons';
 
 interface CommentSectionProps {
   comments: Comment[];
-  onAdd: (text: string) => void;
+  onAdd?: (text: string) => void;
   onDelete: (id: string) => void;
   onLike: (id: string) => void;
+  readOnly?: boolean;
 }
 
-export function CommentSection({ comments, onAdd, onDelete, onLike }: CommentSectionProps) {
+export function CommentSection({ comments, onAdd, onDelete, onLike, readOnly = false }: CommentSectionProps) {
   const [text, setText] = useState('');
   const [swipedId, setSwipedId] = useState<string | null>(null);
 
   const submit = () => {
     const t = text.trim();
-    if (!t) return;
+    if (!t || !onAdd) return;
     onAdd(t);
     setText('');
   };
@@ -24,16 +25,18 @@ export function CommentSection({ comments, onAdd, onDelete, onLike }: CommentSec
   return (
     <section className="comments">
       <h3 className="comments-title">评论 {comments.length}</h3>
-      <div className="comment-input-row">
-        <input
-          className="comment-input"
-          placeholder="写评论…"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && submit()}
-        />
-        <button type="button" className="comment-submit" onClick={submit}>发送</button>
-      </div>
+      {!readOnly && onAdd && (
+        <div className="comment-input-row">
+          <input
+            className="comment-input"
+            placeholder="写评论…"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && submit()}
+          />
+          <button type="button" className="comment-submit" onClick={submit}>发送</button>
+        </div>
+      )}
       <ul className="comment-list">
         {comments.map((c) => (
           <li
@@ -56,10 +59,12 @@ export function CommentSection({ comments, onAdd, onDelete, onLike }: CommentSec
           >
             <div className="comment-body">
               <time>{formatDateTime(c.createdAt)}</time>
-              <p>{c.text}</p>
-              <button type="button" className="comment-like" onClick={() => onLike(c.id)}>
-                <IconHeart filled={c.likes > 0} /> {c.likes > 0 && c.likes}
-              </button>
+              <div className="comment-text-row">
+                <p>{c.text}</p>
+                <button type="button" className="comment-like" onClick={() => onLike(c.id)}>
+                  <IconHeart filled={c.likes > 0} /> {c.likes > 0 && c.likes}
+                </button>
+              </div>
             </div>
             <button type="button" className="comment-delete" onClick={() => onDelete(c.id)}>
               删除

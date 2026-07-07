@@ -95,7 +95,7 @@ export function AddPage() {
           tags: authorForm.tags.filter(Boolean),
         });
       }
-      navigate(`/quote/${editId}`);
+      navigate(`/quote/${editId}`, { replace: true });
       return;
     }
     const id = store.addExcerpt(
@@ -113,7 +113,11 @@ export function AddPage() {
         source: quoteForm.source || undefined,
       },
     );
-    navigate(authorId ? `/author/${authorId}` : `/quote/${id}`);
+    if (authorId) {
+      navigate(`/author/${authorId}`, { replace: true });
+    } else {
+      navigate(`/quote/${id}`, { replace: true, state: { fromPublish: true, backTo: '/' } });
+    }
   };
 
   const submitEssay = () => {
@@ -127,7 +131,7 @@ export function AddPage() {
         supplement: essayForm.supplement || undefined,
         location: essayForm.location || undefined,
       });
-      navigate(`/quote/${editId}`);
+      navigate(`/quote/${editId}`, { replace: true });
       return;
     }
     const id = store.addEssay({
@@ -135,7 +139,7 @@ export function AddPage() {
       supplement: essayForm.supplement || undefined,
       location: essayForm.location || undefined,
     });
-    navigate(`/quote/${id}`, { replace: true, state: { fromPublish: true } });
+    navigate(`/quote/${id}`, { replace: true, state: { fromPublish: true, backTo: '/me' } });
   };
 
   const now = new Date();
