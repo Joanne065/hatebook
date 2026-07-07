@@ -135,7 +135,7 @@ export function AddPage() {
       supplement: essayForm.supplement || undefined,
       location: essayForm.location || undefined,
     });
-    navigate(`/quote/${id}`);
+    navigate(`/quote/${id}`, { replace: true, state: { fromPublish: true } });
   };
 
   const now = new Date();

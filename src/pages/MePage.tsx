@@ -124,6 +124,7 @@ export function MePage() {
                 author={author}
                 likes={store.getInteraction(q.id).likes}
                 to={batchMode ? '#' : `/quote/${q.id}`}
+                showAuthor={tab === 'collected' || tab === 'liked'}
               />
             </div>
           );

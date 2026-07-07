@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Avatar } from '../components/Avatar';
 import { CommentSection } from '../components/CommentSection';
 import { IconBack, IconCopy, IconEdit } from '../components/Icons';
@@ -9,6 +9,7 @@ import { useStore } from '../store/store';
 export function QuoteDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const store = useStore();
   const commentsRef = useRef<HTMLElement>(null);
 
@@ -41,10 +42,23 @@ export function QuoteDetailPage() {
   const isEssay = quote.type === 'essay';
   const authorLink = isEssay ? '/me' : `/author/${author.id}`;
 
+  const handleBack = () => {
+    const fromPublish = (location.state as { fromPublish?: boolean } | null)?.fromPublish;
+    if (isEssay && fromPublish) {
+      navigate('/', { replace: true });
+      return;
+    }
+    if (isEssay) {
+      navigate('/me');
+      return;
+    }
+    navigate(-1);
+  };
+
   return (
     <div className="page page-detail">
       <header className="detail-header">
-        <button type="button" className="icon-btn" onClick={() => navigate(-1)}><IconBack /></button>
+        <button type="button" className="icon-btn" onClick={handleBack} aria-label="返回"><IconBack /></button>
         <Avatar author={author} size={36} to={authorLink} />
         <div className="detail-header-meta">
           <Link to={authorLink}>{author.nameCn}</Link>

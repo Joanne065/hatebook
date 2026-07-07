@@ -92,13 +92,16 @@ export function QuoteCard({
 
 export function GridQuoteCard({
   quote,
+  author,
   likes,
   to,
+  showAuthor = false,
 }: {
   quote: Quote;
   author: Author;
   likes: number;
   to: string;
+  showAuthor?: boolean;
 }) {
   return (
     <Link to={to} className="grid-card">
@@ -109,7 +112,14 @@ export function GridQuoteCard({
         variant="grid"
       />
       <div className="grid-card-footer">
-        <span className="grid-card-source">{formatSource(quote.source)}</span>
+        {showAuthor ? (
+          <div className="grid-card-author">
+            <Avatar author={author} size={18} />
+            <span className="grid-card-author-name">{author.nameCn || author.nameEn}</span>
+          </div>
+        ) : (
+          <span className="grid-card-source">{formatSource(quote.source)}</span>
+        )}
         <span className="grid-card-likes">
           <IconHeart filled={likes > 0} size={14} />
           {likes > 0 && likes}
