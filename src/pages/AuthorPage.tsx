@@ -17,6 +17,7 @@ export function AuthorPage() {
   const location = useLocation();
   const pageState = readLocationState(location.state);
   const backTo = pageState.backTo ?? '/';
+  const authorReturnState = { backTo };
   const store = useStore();
   const [tab, setTab] = useState<AuthorTab>('notes');
   const [query, setQuery] = useState('');
@@ -173,7 +174,7 @@ export function AuthorPage() {
                 linkState={batchMode ? undefined : {
                   authorFeed: true,
                   backTo: `/author/${author.id}`,
-                  restoreState: pageState,
+                  restoreState: authorReturnState,
                 }}
               />
             </div>

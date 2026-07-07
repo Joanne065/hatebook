@@ -19,6 +19,7 @@ interface QuoteCardProps {
   onCommentClick?: () => void;
   onCopy: () => void;
   linkState?: LinkProps['state'];
+  disablePaperLink?: boolean;
 }
 
 export function QuoteCard({
@@ -35,6 +36,7 @@ export function QuoteCard({
   onCommentClick,
   onCopy,
   linkState,
+  disablePaperLink = false,
 }: QuoteCardProps) {
   const isEssay = quote.type === 'essay';
   const authorLink = isEssay ? '/me' : `/author/${author.id}`;
@@ -57,14 +59,25 @@ export function QuoteCard({
         )}
       </header>
 
-      <Link to={`/quote/${quote.id}`} className="paper-link" state={linkState}>
-        <PaperContent
-          text={quote.text}
-          original={quote.original}
-          originalLabel={quote.originalLabel}
-          variant="feed"
-        />
-      </Link>
+      {disablePaperLink ? (
+        <div className="paper-link">
+          <PaperContent
+            text={quote.text}
+            original={quote.original}
+            originalLabel={quote.originalLabel}
+            variant="feed"
+          />
+        </div>
+      ) : (
+        <Link to={`/quote/${quote.id}`} className="paper-link" state={linkState}>
+          <PaperContent
+            text={quote.text}
+            original={quote.original}
+            originalLabel={quote.originalLabel}
+            variant="feed"
+          />
+        </Link>
+      )}
 
       <footer className="quote-card-footer">
         <div className="quote-card-source">

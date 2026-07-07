@@ -55,31 +55,40 @@ export function QuoteDetailPage() {
   const isEssay = quote.type === 'essay';
   const authorLink = isEssay ? '/me' : `/author/${author.id}`;
 
+  const authorPath = `/author/${author.id}`;
+  const authorReturnState: AppLocationState = { backTo: state.restoreState?.backTo ?? '/' };
+
   const handleBack = () => {
+    const openedFromAuthor =
+      state.authorFeed ||
+      state.backTo === authorPath ||
+      (state.backTo?.startsWith('/author/') ?? false);
+
+    if (openedFromAuthor && !isEssay) {
+      goBack(navigate, authorPath, authorReturnState);
+      return;
+    }
     if (state.backTo) {
-      if (authorFeed && state.backTo.startsWith('/author/')) {
-        goBack(navigate, state.backTo, state.restoreState);
-        return;
-      }
       goBack(navigate, state.backTo);
       return;
     }
-    if (authorFeed) {
-      goBack(navigate, `/author/${author.id}`, state.restoreState);
-      return;
-    }
     if (state.fromPublish) {
-      goBack(navigate, isEssay ? '/me' : `/author/${author.id}`);
+      goBack(navigate, isEssay ? '/me' : authorPath);
       return;
     }
     goBack(navigate, isEssay ? '/me' : '/');
   };
 
-  const authorPageState: AppLocationState = state.restoreState ?? { backTo: '/' };
+  const authorPageState: AppLocationState = authorReturnState;
+  const feedLinkState: AppLocationState = {
+    authorFeed: true,
+    backTo: authorPath,
+    restoreState: authorReturnState,
+  };
   const editBackState: AppLocationState = {
-    backTo: state.backTo ?? (authorFeed ? `/author/${author.id}` : isEssay ? '/me' : '/'),
+    backTo: state.backTo ?? (authorFeed ? authorPath : isEssay ? '/me' : '/'),
     authorFeed,
-    restoreState: state.restoreState,
+    restoreState: authorReturnState,
   };
 
   const renderQuoteBlock = (q: typeof quote, opts: { showInput: boolean; anchorComments?: boolean; isPrimary?: boolean }) => {
@@ -89,6 +98,7 @@ export function QuoteDetailPage() {
     );
     const qInteraction = store.getInteraction(q.id);
     const qComments = store.getComments(q.id);
+    const cardLinkState = authorFeed ? feedLinkState : undefined;
 
     return (
       <article className="detail-feed-item" key={q.id} ref={opts.isPrimary ? topRef : undefined}>
@@ -99,6 +109,8 @@ export function QuoteDetailPage() {
           favorited={qInteraction.favorited}
           commentCount={qComments.length}
           showActions={false}
+          disablePaperLink={opts.isPrimary}
+          linkState={cardLinkState}
           onLike={() => store.likeQuote(q.id)}
           onFavorite={() => store.toggleFavorite(q.id)}
           onCommentClick={() => {
