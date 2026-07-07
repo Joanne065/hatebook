@@ -41,8 +41,9 @@ export function HomePage() {
               showTimestamp={false}
               onLike={() => store.likeQuote(quote.id)}
               onFavorite={() => store.toggleFavorite(quote.id)}
-              onCommentClick={() => navigate(`/quote/${quote.id}#comments`)}
+              onCommentClick={() => navigate(`/quote/${quote.id}#comments`, { state: { backTo: '/' } })}
               onCopy={() => void copyQuote(quote, author)}
+              linkState={{ backTo: '/' }}
             />
           );
         })}

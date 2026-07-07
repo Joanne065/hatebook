@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { BottomNav } from '../components/Layout';
 import { IconBack, IconClose } from '../components/Icons';
 import { useStore } from '../store/store';
+import { goBack, readLocationState } from '../utils/navigation';
 
 type Tab = 'excerpt' | 'essay';
 
@@ -13,6 +14,8 @@ const emptyEssay = { text: '', supplement: '', location: '' };
 export function AddPage() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  const pageState = readLocationState(location.state);
   const store = useStore();
 
   const authorId = params.get('author');
@@ -61,6 +64,26 @@ export function AddPage() {
     }
   }, [authorId, editId, store]);
 
+  const handleBack = () => {
+    if (pageState.backTo) {
+      goBack(navigate, pageState.backTo);
+      return;
+    }
+    if (authorId) {
+      goBack(navigate, `/author/${authorId}`);
+      return;
+    }
+    if (editId) {
+      goBack(navigate, `/quote/${editId}`);
+      return;
+    }
+    goBack(navigate, initialTab === 'essay' ? '/me' : '/');
+  };
+
+  const quoteReturnState = pageState.backTo
+    ? { backTo: pageState.backTo, restoreState: pageState.restoreState, authorFeed: pageState.authorFeed }
+    : undefined;
+
   const updateTag = (i: number, v: string) => {
     const tags = [...authorForm.tags];
     tags[i] = v;
@@ -75,7 +98,7 @@ export function AddPage() {
 
   const submitExcerpt = () => {
     if (!quoteForm.text.trim() && !authorForm.nameCn.trim()) {
-      navigate(-1);
+      handleBack();
       return;
     }
     if (editId) {
@@ -95,7 +118,7 @@ export function AddPage() {
           tags: authorForm.tags.filter(Boolean),
         });
       }
-      navigate(`/quote/${editId}`, { replace: true });
+      navigate(`/quote/${editId}`, { replace: true, state: quoteReturnState });
       return;
     }
     const id = store.addExcerpt(
@@ -122,7 +145,7 @@ export function AddPage() {
 
   const submitEssay = () => {
     if (!essayForm.text.trim()) {
-      navigate(-1);
+      handleBack();
       return;
     }
     if (editId) {
@@ -131,7 +154,7 @@ export function AddPage() {
         supplement: essayForm.supplement || undefined,
         location: essayForm.location || undefined,
       });
-      navigate(`/quote/${editId}`, { replace: true });
+      navigate(`/quote/${editId}`, { replace: true, state: quoteReturnState });
       return;
     }
     const id = store.addEssay({
@@ -148,7 +171,7 @@ export function AddPage() {
   return (
     <div className="page page-add">
       <header className="add-header">
-        <button type="button" className="icon-btn" onClick={() => navigate(-1)} aria-label="返回">
+        <button type="button" className="icon-btn" onClick={handleBack} aria-label="返回">
           <IconBack />
         </button>
       </header>

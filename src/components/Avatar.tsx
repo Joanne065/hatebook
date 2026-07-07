@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, type LinkProps } from 'react-router-dom';
 import avatarManifest from '../data/avatar-manifest.json';
 import type { Author } from '../types';
 import { fetchAuthorAvatar, getCachedAvatar, setCachedAvatar } from '../utils/avatarFetch';
@@ -19,10 +19,11 @@ interface AvatarProps {
   author: Author;
   size?: number;
   to?: string;
+  linkState?: LinkProps['state'];
   onClick?: () => void;
 }
 
-export function Avatar({ author, size = 40, to, onClick }: AvatarProps) {
+export function Avatar({ author, size = 40, to, linkState, onClick }: AvatarProps) {
   const [url, setUrl] = useState<string | null>(() => resolveStaticUrl(author));
   const [failed, setFailed] = useState(false);
   const fallback = getAvatarFallback(author.nameCn, author.nameEn);
@@ -83,6 +84,6 @@ export function Avatar({ author, size = 40, to, onClick }: AvatarProps) {
     </div>
   );
 
-  if (to) return <Link to={to} className="avatar-link">{content}</Link>;
+  if (to) return <Link to={to} className="avatar-link" state={linkState}>{content}</Link>;
   return content;
 }

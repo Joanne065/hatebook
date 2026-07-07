@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { MasonryFeed } from '../components/MasonryFeed';
 import { BatchSelectWrap } from '../components/BatchSelectWrap';
 import { Avatar } from '../components/Avatar';
@@ -9,10 +9,14 @@ import { ProfileTabTools, SearchBar } from '../components/Layout';
 import type { AuthorTab } from '../types';
 import { useStore, searchQuotes } from '../store/store';
 import { getAuthorDisplayTags, getAuthorLifespanDisplay } from '../utils/authorMeta';
+import { goBack, readLocationState } from '../utils/navigation';
 
 export function AuthorPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
+  const pageState = readLocationState(location.state);
+  const backTo = pageState.backTo ?? '/';
   const store = useStore();
   const [tab, setTab] = useState<AuthorTab>('notes');
   const [query, setQuery] = useState('');
@@ -36,7 +40,7 @@ export function AuthorPage() {
   if (!author) {
     return (
       <div className="page">
-        <header className="page-header"><button type="button" onClick={() => navigate(-1)}><IconBack /></button></header>
+        <header className="page-header"><button type="button" onClick={() => goBack(navigate, '/')}><IconBack /></button></header>
         <p className="empty">作者不存在</p>
       </div>
     );
@@ -86,7 +90,7 @@ export function AuthorPage() {
   return (
     <div className="page page-profile">
       <header className="profile-header">
-        <button type="button" className="icon-btn" onClick={() => navigate(-1)}><IconBack /></button>
+        <button type="button" className="icon-btn" onClick={() => goBack(navigate, backTo)}><IconBack /></button>
         <div className="profile-header-actions">
           <button
             type="button"
@@ -158,7 +162,7 @@ export function AuthorPage() {
                 e.preventDefault();
                 const action = prompt('输入 e 编辑 / d 删除');
                 if (action === 'd' && confirm('删除？')) store.deleteQuotes([q.id]);
-                if (action === 'e') navigate(`/add?edit=${q.id}`);
+                if (action === 'e') navigate(`/add?edit=${q.id}`, { state: { backTo: `/author/${author.id}` } });
               }}
             >
               <GridQuoteCard
@@ -166,7 +170,11 @@ export function AuthorPage() {
                 author={author}
                 likes={store.getInteraction(q.id).likes}
                 to={batchMode ? '#' : `/quote/${q.id}`}
-                linkState={batchMode ? undefined : { authorFeed: true }}
+                linkState={batchMode ? undefined : {
+                  authorFeed: true,
+                  backTo: `/author/${author.id}`,
+                  restoreState: pageState,
+                }}
               />
             </div>
           </BatchSelectWrap>

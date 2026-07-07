@@ -18,6 +18,7 @@ interface QuoteCardProps {
   onFavorite: () => void;
   onCommentClick?: () => void;
   onCopy: () => void;
+  linkState?: LinkProps['state'];
 }
 
 export function QuoteCard({
@@ -33,6 +34,7 @@ export function QuoteCard({
   onFavorite,
   onCommentClick,
   onCopy,
+  linkState,
 }: QuoteCardProps) {
   const isEssay = quote.type === 'essay';
   const authorLink = isEssay ? '/me' : `/author/${author.id}`;
@@ -40,9 +42,9 @@ export function QuoteCard({
   return (
     <article className={`quote-card${compact ? ' quote-card--compact' : ''}`}>
       <header className="quote-card-header">
-        <Avatar author={author} size={compact ? 36 : 42} to={authorLink} />
+        <Avatar author={author} size={compact ? 36 : 42} to={authorLink} linkState={linkState} />
         <div className="quote-card-meta">
-          <Link to={authorLink} className="author-name-cn">{author.nameCn || author.nameEn}</Link>
+          <Link to={authorLink} className="author-name-cn" state={linkState}>{author.nameCn || author.nameEn}</Link>
           {!isEssay && author.nameEn && <span className="author-name-en">{author.nameEn}</span>}
           {isEssay && quote.location && <span className="author-name-en">{quote.location}</span>}
         </div>
@@ -55,7 +57,7 @@ export function QuoteCard({
         )}
       </header>
 
-      <Link to={`/quote/${quote.id}`} className="paper-link">
+      <Link to={`/quote/${quote.id}`} className="paper-link" state={linkState}>
         <PaperContent
           text={quote.text}
           original={quote.original}

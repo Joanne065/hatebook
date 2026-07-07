@@ -5,6 +5,7 @@ import { IconBack, IconSearch } from '../components/Icons';
 import { BottomNav, SearchBar } from '../components/Layout';
 import { useStore } from '../store/store';
 import { searchAuthors } from '../utils/helpers';
+import { goBack } from '../utils/navigation';
 
 export function FollowingPage() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export function FollowingPage() {
   return (
     <div className="page page-following">
       <header className="page-header page-header-with-tools">
-        <button type="button" className="icon-btn" onClick={() => navigate(-1)}><IconBack /></button>
+        <button type="button" className="icon-btn" onClick={() => goBack(navigate, '/me')}><IconBack /></button>
         <span className="page-title">作家</span>
         <button
           type="button"
@@ -42,7 +43,7 @@ export function FollowingPage() {
       <ul className="author-list">
         {authors.map((author) => (
           <li key={author.id}>
-            <Link to={`/author/${author.id}`} className="author-list-item">
+            <Link to={`/author/${author.id}`} className="author-list-item" state={{ backTo: '/following' }}>
               <Avatar author={author} size={44} />
               <div className="author-list-meta">
                 <span className="author-list-name">{author.nameCn}</span>

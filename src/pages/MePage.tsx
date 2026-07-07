@@ -125,7 +125,7 @@ export function MePage() {
                   e.preventDefault();
                   const action = prompt('输入 e 编辑 / d 删除');
                   if (action === 'd') store.deleteQuotes([q.id]);
-                  if (action === 'e') navigate(`/add?edit=${q.id}`);
+                  if (action === 'e') navigate(`/add?edit=${q.id}`, { state: { backTo: '/me' } });
                 }}
               >
                 <GridQuoteCard
@@ -134,6 +134,7 @@ export function MePage() {
                   likes={store.getInteraction(q.id).likes}
                   to={batchMode ? '#' : `/quote/${q.id}`}
                   showAuthor={tab === 'collected' || tab === 'liked'}
+                  linkState={batchMode ? undefined : { backTo: '/me' }}
                 />
               </div>
             </BatchSelectWrap>

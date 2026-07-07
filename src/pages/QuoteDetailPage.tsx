@@ -6,12 +6,7 @@ import { IconBack, IconCopy, IconEdit } from '../components/Icons';
 import { QuoteCard, copyQuote, resolveAuthorForQuote } from '../components/QuoteCard';
 import { useStore } from '../store/store';
 import { shuffle } from '../utils/helpers';
-
-type DetailLocationState = {
-  fromPublish?: boolean;
-  backTo?: string;
-  authorFeed?: boolean;
-};
+import { goBack, readLocationState, type AppLocationState } from '../utils/navigation';
 
 export function QuoteDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -20,7 +15,7 @@ export function QuoteDetailPage() {
   const store = useStore();
   const commentsRef = useRef<HTMLDivElement>(null);
   const topRef = useRef<HTMLElement>(null);
-  const state = location.state as DetailLocationState | null;
+  const state = readLocationState(location.state);
 
   const quote = id ? store.getQuote(id) : undefined;
 
@@ -45,7 +40,7 @@ export function QuoteDetailPage() {
     return (
       <div className="page">
         <header className="page-header">
-          <button type="button" className="icon-btn" onClick={() => navigate(-1)}><IconBack /></button>
+          <button type="button" className="icon-btn" onClick={() => goBack(navigate, '/')}><IconBack /></button>
           <span>未找到</span>
         </header>
         <p className="empty">这条内容不存在或已被删除</p>
@@ -61,19 +56,30 @@ export function QuoteDetailPage() {
   const authorLink = isEssay ? '/me' : `/author/${author.id}`;
 
   const handleBack = () => {
+    if (state.backTo) {
+      if (authorFeed && state.backTo.startsWith('/author/')) {
+        goBack(navigate, state.backTo, state.restoreState);
+        return;
+      }
+      goBack(navigate, state.backTo);
+      return;
+    }
     if (authorFeed) {
-      navigate(`/author/${author.id}`);
+      goBack(navigate, `/author/${author.id}`, state.restoreState);
       return;
     }
-    if (state?.fromPublish) {
-      navigate(state.backTo ?? (isEssay ? '/' : `/author/${author.id}`), { replace: true });
+    if (state.fromPublish) {
+      goBack(navigate, isEssay ? '/me' : `/author/${author.id}`);
       return;
     }
-    if (isEssay) {
-      navigate('/me');
-      return;
-    }
-    navigate(-1);
+    goBack(navigate, isEssay ? '/me' : '/');
+  };
+
+  const authorPageState: AppLocationState = state.restoreState ?? { backTo: '/' };
+  const editBackState: AppLocationState = {
+    backTo: state.backTo ?? (authorFeed ? `/author/${author.id}` : isEssay ? '/me' : '/'),
+    authorFeed,
+    restoreState: state.restoreState,
   };
 
   const renderQuoteBlock = (q: typeof quote, opts: { showInput: boolean; anchorComments?: boolean; isPrimary?: boolean }) => {
@@ -120,15 +126,15 @@ export function QuoteDetailPage() {
     <div className="page page-detail">
       <header className="detail-header">
         <button type="button" className="icon-btn" onClick={handleBack} aria-label="返回"><IconBack /></button>
-        <Avatar author={author} size={36} to={authorLink} />
+        <Avatar author={author} size={36} to={authorLink} linkState={authorPageState} />
         <div className="detail-header-meta">
-          <Link to={authorLink}>{author.nameCn}</Link>
+          <Link to={authorLink} state={authorPageState}>{author.nameCn}</Link>
           {(quote.location || author.ip) && (
             <span>{quote.location || author.ip}</span>
           )}
         </div>
         <div className="detail-header-tools">
-          <button type="button" className="icon-btn" onClick={() => navigate(`/add?edit=${quote.id}`)}>
+          <button type="button" className="icon-btn" onClick={() => navigate(`/add?edit=${quote.id}`, { state: editBackState })}>
             <IconEdit />
           </button>
           <button type="button" className="icon-btn" onClick={() => void copyQuote(quote, author)}>
