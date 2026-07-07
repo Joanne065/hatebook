@@ -69,6 +69,15 @@ export function getShortAuthorName(nameCn: string): string {
   return nameCn.replace(/^[^\u4e00-\u9fff]*/u, '').slice(-3) || nameCn;
 }
 
+/** Grid footer: foreigners always use short name; Chinese authors use full name */
+export function getGridAuthorName(author: Author): string {
+  if (author.id === ME_AUTHOR_ID) return author.nameCn;
+  const ip = author.ip?.trim() ?? '';
+  const isChinese = ip === '中国' || ip === 'China';
+  if (isChinese || !ip) return author.nameCn || author.nameEn;
+  return getShortAuthorName(author.nameCn || author.nameEn);
+}
+
 export function searchAuthors(authors: Author[], query: string): Author[] {
   const q = query.trim().toLowerCase();
   if (!q) return authors;
