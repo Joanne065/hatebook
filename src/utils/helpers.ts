@@ -1,5 +1,6 @@
 /** Pre-resolved Wikipedia portrait URLs (grayscale applied via CSS) */
 import type { Author, Interaction, Quote } from '../types';
+import authorSearchMeta from '../data/author-search-meta.json';
 
 export const AUTHOR_AVATARS: Record<string, string> = {
   'franz-kafka': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kafka1906_cropped.jpg/320px-Kafka1906_cropped.jpg',
@@ -90,23 +91,42 @@ export function getGridAuthorName(author: Author): string {
   return getShortAuthorName(author.nameCn || author.nameEn);
 }
 
-export function searchAuthors(authors: Author[], query: string): Author[] {
+const AUTHOR_SEARCH_META: Record<string, string[]> = authorSearchMeta;
+
+function getAuthorHiddenSearchTags(authorId: string): string[] {
+  return AUTHOR_SEARCH_META[authorId] ?? [];
+}
+
+function authorMatchesSearchQuery(author: Author, query: string): boolean {
   const q = query.trim().toLowerCase();
+  if (!q) return true;
+
+  const hiddenTags = getAuthorHiddenSearchTags(author.id);
+
+  if (q === '同性恋') {
+    return hiddenTags.includes('给') || hiddenTags.includes('拉拉');
+  }
+
+  const haystack = [
+    author.nameCn,
+    author.nameEn,
+    author.ip,
+    author.profession,
+    author.bio,
+    ...(author.tags ?? []),
+    ...hiddenTags,
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+
+  return haystack.includes(q);
+}
+
+export function searchAuthors(authors: Author[], query: string): Author[] {
+  const q = query.trim();
   if (!q) return authors;
-  return authors.filter((author) => {
-    const haystack = [
-      author.nameCn,
-      author.nameEn,
-      author.ip,
-      author.profession,
-      author.bio,
-      ...(author.tags ?? []),
-    ]
-      .filter(Boolean)
-      .join(' ')
-      .toLowerCase();
-    return haystack.includes(q);
-  });
+  return authors.filter((author) => authorMatchesSearchQuery(author, q));
 }
 
 export function formatCopyText(text: string, authorName: string): string {

@@ -74,6 +74,9 @@ export function MePage() {
         <Avatar author={meAuthor} size={56} />
         <div>
           <h1>{store.state.userProfile.name}</h1>
+          {store.state.userProfile.location && (
+            <p className="profile-sub">IP: {store.state.userProfile.location}</p>
+          )}
           {store.state.userProfile.bio && <p className="profile-bio">{store.state.userProfile.bio}</p>}
           <Link to="/following" className="follow-stat">
             <strong>{authorCount}</strong> 关注

@@ -6,6 +6,68 @@ import { ME_AUTHOR_ID, uid, getFollowedAuthorIds } from '../utils/helpers';
 
 const STORAGE_KEY = 'xiaohhenshu-state-v1';
 
+/** Metadata lines wrongly imported as quotes during docx merge */
+const CORRUPT_QUOTE_IDS = new Set([
+  'd5675124-c4b7-4fd6-98dc-e2cfc4f4a615',
+  'eea2cc47-8092-49b5-9e82-925fff80c9b6',
+  'a7248b01-6cb2-4ff3-b7b5-c17d9f9dc97f',
+  '419b7a24-2635-4cc1-8a1e-0012c0fdd493',
+  '0697a29e-e86b-4798-b50d-e5edfe40281b',
+  'd90a92ab-db3c-415e-981c-12e5791b0d93',
+  'b2278f01-69e0-4c33-8e89-2bcdbfd0237d',
+  'bde4d97e-3b8a-4152-91fd-94292cf19281',
+  '176e6c31-976c-4b60-bcac-1f4d55a006de',
+  'd04143ba-2dbb-4a2f-a8fd-27d80fd934c1',
+  '0eb4003a-79fb-481c-bf69-923ee290d51b',
+]);
+
+const DAZAI_QUOTE_IDS = new Set([
+  'ee76caed-0e81-4643-ac5d-f9a813d031b6',
+  '77199965-ab49-4ea4-9eea-728d34aa8a6f',
+  '1c605688-c648-4e50-a11e-0645c7a3f979',
+  '80298088-7e79-414f-98d0-c3fa2cd178c0',
+  '5fb0a2a5-a84d-43fc-82b3-9fdae2ab367f',
+  'f601978c-a778-45bd-b665-4db2f1b88e98',
+]);
+
+const MIN_QUOTE_ID = 'fa6103d4-9a19-4074-a4d4-23524ac7c717';
+const XIAO_HONG_ESSAY_QUOTE_ID = '2f8c1733-97eb-416d-9acd-549f172548e3';
+
+function migrateCorruptedAuthors(state: AppState, initial: AppState): AppState {
+  const authors = { ...state.authors };
+  if (initial.authors['osamu-dazai']) authors['osamu-dazai'] = initial.authors['osamu-dazai'];
+  if (initial.authors['min-ji-hyeong']) authors['min-ji-hyeong'] = initial.authors['min-ji-hyeong'];
+
+  const quotes = state.quotes
+    .filter((q) => !CORRUPT_QUOTE_IDS.has(q.id))
+    .map((q) => {
+      if (q.id === XIAO_HONG_ESSAY_QUOTE_ID) {
+        return { ...q, source: '随笔' };
+      }
+      if (DAZAI_QUOTE_IDS.has(q.id)) {
+        return { ...q, authorId: 'osamu-dazai' };
+      }
+      if (q.id === MIN_QUOTE_ID) {
+        return { ...q, authorId: 'min-ji-hyeong' };
+      }
+      return q;
+    });
+
+  const quoteIds = new Set(quotes.map((q) => q.id));
+  for (const q of initial.quotes) {
+    if ((DAZAI_QUOTE_IDS.has(q.id) || q.id === MIN_QUOTE_ID) && !quoteIds.has(q.id)) {
+      quotes.push(q);
+    }
+  }
+
+  return {
+    ...state,
+    authors,
+    quotes,
+    deletedQuoteIds: (state.deletedQuoteIds ?? []).filter((id) => !CORRUPT_QUOTE_IDS.has(id)),
+  };
+}
+
 const defaultUserProfile: UserProfile = {
   name: 'momo',
   bio: '这个人很懒，可能还没想好吧！',
@@ -57,7 +119,7 @@ function loadState(): AppState {
     }
     const existingIds = new Set(parsed.quotes.map((q) => q.id));
     const newDefaults = initial.quotes.filter((q) => !existingIds.has(q.id));
-    return {
+    return migrateCorruptedAuthors({
       ...initial,
       ...parsed,
       authors: mergedAuthors,
@@ -71,7 +133,7 @@ function loadState(): AppState {
       },
       deletedQuoteIds: parsed.deletedQuoteIds ?? [],
       followedAuthorIds: parsed.followedAuthorIds ?? [],
-    };
+    }, initial);
   } catch {
     return buildInitialState();
   }

@@ -3682,84 +3682,7 @@
           "text": "他们都像最低级的植物似的，只要极少的水分、土壤、阳光——甚至没有阳光，就能够生存了。生命力特别顽强，这是原始性的顽强。",
           "original": "",
           "originalLabel": "",
-          "source": "随笔太宰治 / Osamu Dazai"
-        },
-        {
-          "id": "d5675124-c4b7-4fd6-98dc-e2cfc4f4a615",
-          "text": "IP：日本",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "eea2cc47-8092-49b5-9e82-925fff80c9b6",
-          "text": "1909.6.19 ~ 1948.6.13（39岁）",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "a7248b01-6cb2-4ff3-b7b5-c17d9f9dc97f",
-          "text": "小说家",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "419b7a24-2635-4cc1-8a1e-0012c0fdd493",
-          "text": "日本“丧文化”鼻祖，用毁灭书写敏感灵魂",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "0697a29e-e86b-4798-b50d-e5edfe40281b",
-          "text": "双子座 极致悲观、人间失格、敏感脆弱、厌世文学",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "ee76caed-0e81-4643-ac5d-f9a813d031b6",
-          "text": "胆小鬼连幸福都会害怕，碰到棉花都会受伤，有时还被幸福所伤。",
-          "original": "",
-          "originalLabel": "",
-          "source": "《人间失格》"
-        },
-        {
-          "id": "77199965-ab49-4ea4-9eea-728d34aa8a6f",
-          "text": "若能避开猛烈的欢喜，自然不会有悲痛的来袭。",
-          "original": "",
-          "originalLabel": "",
-          "source": "《人间失格》"
-        },
-        {
-          "id": "1c605688-c648-4e50-a11e-0645c7a3f979",
-          "text": "相互轻蔑却又彼此来往，并一起自我作贱——这就是世上所谓“朋友”的真面目。",
-          "original": "",
-          "originalLabel": "",
-          "source": "《人间失格》"
-        },
-        {
-          "id": "80298088-7e79-414f-98d0-c3fa2cd178c0",
-          "text": "家里的事不可说，身上的痛苦不可说，对明日的畏惧不可说，对世人的疑惑不可说，昨日之耻不可说。",
-          "original": "",
-          "originalLabel": "",
-          "source": "《人间失格》"
-        },
-        {
-          "id": "5fb0a2a5-a84d-43fc-82b3-9fdae2ab367f",
-          "text": "今后，我要单纯正直地行事。不懂的，就说不懂；不会的，就坦承不会。若是摒弃故作姿态，人生之路似乎是意外的平坦通途。",
-          "original": "",
-          "originalLabel": "",
-          "source": "《人间失格》"
-        },
-        {
-          "id": "f601978c-a778-45bd-b665-4db2f1b88e98",
-          "text": "既然活在这世上，便怎么也免不了要向谁卑躬屈膝，继而一步一步，压榨他人辛苦攀爬，除此之外别无他法。",
-          "original": "",
-          "originalLabel": "",
-          "source": "《人间失格》"
+          "source": "随笔"
         }
       ]
     },
@@ -4755,55 +4678,90 @@
           "original": "جمعه‌ی خمیازه‌آلود، جمعه‌ی شوم. جمعه‌ی بی‌انتظار. جمعه‌ی تسلیم‌شده.",
           "originalLabel": "波斯语",
           "source": "《让我们相信这寒冷季节的黎明》"
-        },
-        {
-          "id": "d90a92ab-db3c-415e-981c-12e5791b0d93",
-          "text": "闵智炯 / 민지형",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "b2278f01-69e0-4c33-8e89-2bcdbfd0237d",
-          "text": "IP：韩国",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "bde4d97e-3b8a-4152-91fd-94292cf19281",
-          "text": "1986年 至今",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "176e6c31-976c-4b60-bcac-1f4d55a006de",
-          "text": "小说家、编剧",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "d04143ba-2dbb-4a2f-a8fd-27d80fd934c1",
-          "text": "用犀利笔触书写当代女性的困境与疲惫",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
-        {
-          "id": "0eb4003a-79fb-481c-bf69-923ee290d51b",
-          "text": "韩国文学、女性主义、职场困境、情感疲惫",
-          "original": "",
-          "originalLabel": "",
-          "source": ""
-        },
+        }
+      ]
+    },
+    {
+      "id": "min-ji-hyeong",
+      "nameCn": "闵智炯",
+      "nameEn": "민지형",
+      "ip": "韩国",
+      "lifespan": "1986年 至今",
+      "profession": "小说家、编剧",
+      "bio": "用犀利笔触书写当代女性的困境与疲惫",
+      "tags": [
+        "韩国文学",
+        "女性主义",
+        "职场困境",
+        "情感疲惫"
+      ],
+      "quotes": [
         {
           "id": "fa6103d4-9a19-4074-a4d4-23524ac7c717",
           "text": "现在是星期四的下午五点，上班族最疲惫的时刻。",
           "original": "",
           "originalLabel": "",
           "source": "《她厌男，她是我女友》"
+        }
+      ]
+    },
+    {
+      "id": "osamu-dazai",
+      "nameCn": "太宰治",
+      "nameEn": "Osamu Dazai",
+      "ip": "日本",
+      "lifespan": "1909.6.19 ~ 1948.6.13（39岁）",
+      "profession": "小说家",
+      "bio": "日本\"丧文化\"鼻祖，用毁灭书写敏感灵魂",
+      "tags": [
+        "双子座",
+        "极致悲观",
+        "人间失格",
+        "敏感脆弱",
+        "厌世文学"
+      ],
+      "quotes": [
+        {
+          "id": "ee76caed-0e81-4643-ac5d-f9a813d031b6",
+          "text": "胆小鬼连幸福都会害怕，碰到棉花都会受伤，有时还被幸福所伤。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《人间失格》"
+        },
+        {
+          "id": "77199965-ab49-4ea4-9eea-728d34aa8a6f",
+          "text": "若能避开猛烈的欢喜，自然不会有悲痛的来袭。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《人间失格》"
+        },
+        {
+          "id": "1c605688-c648-4e50-a11e-0645c7a3f979",
+          "text": "相互轻蔑却又彼此来往，并一起自我作贱——这就是世上所谓“朋友”的真面目。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《人间失格》"
+        },
+        {
+          "id": "80298088-7e79-414f-98d0-c3fa2cd178c0",
+          "text": "家里的事不可说，身上的痛苦不可说，对明日的畏惧不可说，对世人的疑惑不可说，昨日之耻不可说。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《人间失格》"
+        },
+        {
+          "id": "5fb0a2a5-a84d-43fc-82b3-9fdae2ab367f",
+          "text": "今后，我要单纯正直地行事。不懂的，就说不懂；不会的，就坦承不会。若是摒弃故作姿态，人生之路似乎是意外的平坦通途。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《人间失格》"
+        },
+        {
+          "id": "f601978c-a778-45bd-b665-4db2f1b88e98",
+          "text": "既然活在这世上，便怎么也免不了要向谁卑躬屈膝，继而一步一步，压榨他人辛苦攀爬，除此之外别无他法。",
+          "original": "",
+          "originalLabel": "",
+          "source": "《人间失格》"
         }
       ]
     },

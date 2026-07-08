@@ -13,10 +13,19 @@ export function FollowingPage() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
 
-  const allAuthors = useMemo(
-    () => Object.values(store.state.authors).sort((a, b) => a.nameCn.localeCompare(b.nameCn, 'zh')),
-    [store.state.authors],
-  );
+  const allAuthors = useMemo(() => {
+    const favoriteCounts: Record<string, number> = {};
+    for (const q of store.visibleQuotes) {
+      if (store.getInteraction(q.id).favorited) {
+        favoriteCounts[q.authorId] = (favoriteCounts[q.authorId] ?? 0) + 1;
+      }
+    }
+    return Object.values(store.state.authors).sort((a, b) => {
+      const diff = (favoriteCounts[b.id] ?? 0) - (favoriteCounts[a.id] ?? 0);
+      if (diff !== 0) return diff;
+      return a.nameCn.localeCompare(b.nameCn, 'zh');
+    });
+  }, [store.state.authors, store.visibleQuotes, store.state.interactions]);
 
   const authors = useMemo(
     () => searchAuthors(allAuthors, query),

@@ -1,6 +1,6 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BottomNav, SearchBar } from '../components/Layout';
+import { BottomNav, HOME_REFRESH_EVENT, SearchBar } from '../components/Layout';
 import { QuoteCard, copyQuote, resolveAuthorForQuote } from '../components/QuoteCard';
 import { searchQuotes, useStore } from '../store/store';
 import { shuffle } from '../utils/helpers';
@@ -10,7 +10,16 @@ export function HomePage() {
   const navigate = useNavigate();
   const store = useStore();
   const [query, setQuery] = useState('');
-  const [feedOrder] = useState(() => shuffle(store.excerptQuotes.map((q) => q.id)));
+  const [feedOrder, setFeedOrder] = useState(() => shuffle(store.excerptQuotes.map((q) => q.id)));
+
+  useEffect(() => {
+    const onRefresh = () => {
+      setQuery('');
+      setFeedOrder(shuffle(store.excerptQuotes.map((q) => q.id)));
+    };
+    window.addEventListener(HOME_REFRESH_EVENT, onRefresh);
+    return () => window.removeEventListener(HOME_REFRESH_EVENT, onRefresh);
+  }, [store.excerptQuotes]);
 
   const feed = useMemo(() => {
     const map = new Map(store.excerptQuotes.map((q) => [q.id, q]));

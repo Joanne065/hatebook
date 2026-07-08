@@ -1,10 +1,21 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { IconPlus, IconSearch } from './Icons';
 
+export const HOME_REFRESH_EVENT = 'xiaohhenshu-home-refresh';
+
 export function BottomNav() {
+  const location = useLocation();
+
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (location.pathname !== '/') return;
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.dispatchEvent(new CustomEvent(HOME_REFRESH_EVENT));
+  };
+
   return (
     <nav className="bottom-nav">
-      <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')} end>
+      <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')} end onClick={handleHomeClick}>
         首页
       </NavLink>
       <NavLink to="/add" className="bottom-nav-add">
