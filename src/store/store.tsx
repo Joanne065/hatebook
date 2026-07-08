@@ -33,10 +33,16 @@ const DAZAI_QUOTE_IDS = new Set([
 const MIN_QUOTE_ID = 'fa6103d4-9a19-4074-a4d4-23524ac7c717';
 const XIAO_HONG_ESSAY_QUOTE_ID = '2f8c1733-97eb-416d-9acd-549f172548e3';
 
+const YU_GUANGZHONG_QUOTE_IDS = new Set([
+  'a27b4d6d-2c42-4a50-8219-64745f9d9484',
+  '39ba2122-bd78-4b20-93d7-1f71184a5898',
+]);
+
 function migrateCorruptedAuthors(state: AppState, initial: AppState): AppState {
   const authors = { ...state.authors };
   if (initial.authors['osamu-dazai']) authors['osamu-dazai'] = initial.authors['osamu-dazai'];
   if (initial.authors['min-ji-hyeong']) authors['min-ji-hyeong'] = initial.authors['min-ji-hyeong'];
+  if (initial.authors['yu-guangzhong']) authors['yu-guangzhong'] = initial.authors['yu-guangzhong'];
 
   const quotes = state.quotes
     .filter((q) => !CORRUPT_QUOTE_IDS.has(q.id))
@@ -50,12 +56,15 @@ function migrateCorruptedAuthors(state: AppState, initial: AppState): AppState {
       if (q.id === MIN_QUOTE_ID) {
         return { ...q, authorId: 'min-ji-hyeong' };
       }
+      if (YU_GUANGZHONG_QUOTE_IDS.has(q.id)) {
+        return { ...q, authorId: 'yu-guangzhong' };
+      }
       return q;
     });
 
   const quoteIds = new Set(quotes.map((q) => q.id));
   for (const q of initial.quotes) {
-    if ((DAZAI_QUOTE_IDS.has(q.id) || q.id === MIN_QUOTE_ID) && !quoteIds.has(q.id)) {
+    if ((DAZAI_QUOTE_IDS.has(q.id) || q.id === MIN_QUOTE_ID || YU_GUANGZHONG_QUOTE_IDS.has(q.id)) && !quoteIds.has(q.id)) {
       quotes.push(q);
     }
   }
