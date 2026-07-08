@@ -93,6 +93,10 @@ export function getGridAuthorName(author: Author): string {
 
 const AUTHOR_SEARCH_META: Record<string, string[]> = authorSearchMeta;
 
+const GAY_SEARCH_QUERIES = new Set(['给', 'gay', '男同', '男同性恋']);
+const LESBIAN_SEARCH_QUERIES = new Set(['拉拉', 'lesbian', '女同', '女同性恋']);
+const QUEER_SEARCH_QUERIES = new Set(['同性恋']);
+
 function getAuthorHiddenSearchTags(authorId: string): string[] {
   return AUTHOR_SEARCH_META[authorId] ?? [];
 }
@@ -103,7 +107,13 @@ function authorMatchesSearchQuery(author: Author, query: string): boolean {
 
   const hiddenTags = getAuthorHiddenSearchTags(author.id);
 
-  if (q === '同性恋') {
+  if (GAY_SEARCH_QUERIES.has(q)) {
+    return hiddenTags.includes('给');
+  }
+  if (LESBIAN_SEARCH_QUERIES.has(q)) {
+    return hiddenTags.includes('拉拉');
+  }
+  if (QUEER_SEARCH_QUERIES.has(q)) {
     return hiddenTags.includes('给') || hiddenTags.includes('拉拉');
   }
 
