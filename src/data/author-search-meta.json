@@ -1,9 +1,9 @@
 {
   "albert-camus": [
     "男",
-    "牛马"
+    "给"
   ],
-  "éric-rohmer": [
+  "alexander-pushkin": [
     "男"
   ],
   "anton-pavlovich-chekhov": [
@@ -11,23 +11,16 @@
     "牛马",
     "抑郁症"
   ],
-  "orhan-pamuk": [
+  "aristotle": [
     "男"
   ],
-  "oscar-wilde": [
-    "男",
-    "给",
-    "富二代",
-    "抑郁症"
-  ],
-  "roberto-bolaño": [
-    "男",
-    "牛马"
+  "arthur-schopenhauer": [
+    "男"
   ],
   "bertrand-russell": [
     "男"
   ],
-  "mikhail-bulgakov": [
+  "boris-pasternak": [
     "男"
   ],
   "charles-bukowski": [
@@ -35,42 +28,53 @@
     "牛马",
     "抑郁症"
   ],
-  "haruki-murakami": [
-    "男"
-  ],
   "daniil-kharms": [
     "男",
     "牛马",
     "抑郁症"
   ],
-  "vincent-van-gogh": [
-    "男",
-    "富二代",
-    "抑郁症"
-  ],
-  "philip-larkin": [
-    "男",
-    "牛马",
-    "抑郁症"
-  ],
-  "fyodor-dostoevsky": [
+  "emil-michel-cioran": [
     "男",
     "牛马",
     "抑郁症"
   ],
   "fernando-pessoa": [
     "男",
-    "富二代",
+    "抑郁症"
+  ],
+  "forough-farrokhzad": [
+    "女",
+    "拉拉",
+    "牛马",
     "抑郁症"
   ],
   "franz-kafka": [
     "男",
     "抑郁症"
   ],
+  "françoise-sagan": [
+    "女",
+    "拉拉",
+    "抑郁症"
+  ],
+  "fumi-yamamoto": [
+    "女"
+  ],
+  "fyodor-dostoevsky": [
+    "男",
+    "牛马",
+    "抑郁症"
+  ],
+  "gabriel-garcía-márquez": [
+    "男"
+  ],
   "ge-fei": [
     "男"
   ],
-  "jorge-luis-borges": [
+  "george-orwell": [
+    "男"
+  ],
+  "haruki-murakami": [
     "男"
   ],
   "hermann-hesse": [
@@ -81,33 +85,26 @@
   "hu-shi": [
     "男"
   ],
-  "ji-xianlin": [
-    "男",
-    "富二代"
-  ],
-  "gabriel-garcía-márquez": [
-    "男",
-    "牛马"
-  ],
-  "shu-qingchun": [
-    "男",
-    "牛马"
-  ],
-  "raymond-carver": [
-    "男",
-    "牛马"
-  ],
-  "lev-nikolayevich-tolstoy": [
+  "ira-ishida": [
     "男"
   ],
-  "sergey-lukyanenko": [
+  "james-hilton": [
+    "男"
+  ],
+  "ji-xianlin": [
+    "男"
+  ],
+  "jorge-luis-borges": [
+    "男"
+  ],
+  "lev-nikolayevich-tolstoy": [
     "男"
   ],
   "lu-xun": [
     "男",
     "牛马"
   ],
-  "mark-twain": [
+  "mai-jia": [
     "男"
   ],
   "marcel-proust": [
@@ -116,49 +113,81 @@
     "富二代",
     "抑郁症"
   ],
-  "mai-jia": [
-    "男"
-  ],
-  "mu-xin": [
-    "男",
-    "富二代"
-  ],
-  "boris-pasternak": [
-    "男"
-  ],
-  "qian-zhongshu": [
-    "男",
-    "富二代"
-  ],
-  "george-orwell": [
-    "男",
-    "富二代"
-  ],
-  "samuel-beckett": [
-    "男"
-  ],
-  "yukio-mishima": [
-    "男",
-    "给",
-    "富二代",
-    "抑郁症"
-  ],
-  "ira-ishida": [
-    "男"
-  ],
-  "steven-rowley": [
-    "男",
-    "给"
-  ],
-  "arthur-schopenhauer": [
+  "mark-twain": [
     "男"
   ],
   "matsuura-yataro": [
     "男"
   ],
+  "mikhail-bulgakov": [
+    "男"
+  ],
+  "mu-xin": [
+    "男",
+    "给",
+    "富二代"
+  ],
+  "orhan-pamuk": [
+    "男"
+  ],
+  "oscar-wilde": [
+    "男",
+    "给",
+    "富二代",
+    "抑郁症"
+  ],
+  "ottessa-moshfegh": [
+    "女",
+    "拉拉",
+    "牛马",
+    "抑郁症"
+  ],
+  "philip-larkin": [
+    "男",
+    "牛马",
+    "抑郁症"
+  ],
+  "qian-zhongshu": [
+    "男"
+  ],
+  "raymond-carver": [
+    "男",
+    "牛马"
+  ],
+  "roberto-bolaño": [
+    "男",
+    "牛马"
+  ],
+  "samuel-beckett": [
+    "男"
+  ],
+  "sergey-lukyanenko": [
+    "男"
+  ],
+  "shu-qingchun": [
+    "男",
+    "牛马"
+  ],
+  "steven-rowley": [
+    "男",
+    "给"
+  ],
+  "svetlana-alexievich": [
+    "女"
+  ],
   "tomasz-różycki": [
     "男",
     "牛马"
+  ],
+  "vincent-van-gogh": [
+    "男",
+    "抑郁症"
+  ],
+  "virginia-woolf": [
+    "女",
+    "拉拉",
+    "富二代",
+    "抑郁症"
   ],
   "wang-zengqi": [
     "男",
@@ -171,62 +200,28 @@
     "男",
     "给"
   ],
-  "aristotle": [
-    "男",
-    "富二代"
-  ],
-  "alexander-pushkin": [
-    "男"
+  "xiao-hong": [
+    "女",
+    "牛马",
+    "抑郁症"
   ],
   "yu-hua": [
     "男",
     "牛马"
   ],
-  "james-hilton": [
-    "男"
+  "yukio-mishima": [
+    "男",
+    "给",
+    "富二代",
+    "抑郁症"
   ],
   "zhu-shenghao": [
     "男"
   ],
-  "emil-michel-cioran": [
-    "男",
-    "牛马",
-    "抑郁症"
-  ],
-  "ottessa-moshfegh": [
-    "女",
-    "牛马",
-    "抑郁症"
-  ],
-  "virginia-woolf": [
-    "女",
-    "拉拉",
-    "富二代",
-    "抑郁症"
-  ],
-  "françoise-sagan": [
-    "女",
-    "拉拉",
-    "抑郁症"
-  ],
-  "forough-farrokhzad": [
-    "女",
-    "牛马",
-    "抑郁症"
+  "éric-rohmer": [
+    "男"
   ],
   "한강": [
     "女"
-  ],
-  "fumi-yamamoto": [
-    "女",
-    "富二代"
-  ],
-  "svetlana-alexievich": [
-    "女"
-  ],
-  "xiao-hong": [
-    "女",
-    "牛马",
-    "抑郁症"
   ]
 }
